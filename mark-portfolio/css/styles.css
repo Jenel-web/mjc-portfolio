@@ -532,3 +532,77 @@ body.story-open { overflow: hidden; }
   .hero-photo { padding: 8px 0 0; justify-content: center; }
   .hero-photo img { max-width: 360px; }
 }
+
+
+/* =====================================================================
+   9. PROJECT CARDS: summary, then the stack in plain running text
+   ===================================================================== */
+.card-stack, .story-stack { font: 500 14px/1.5 var(--font-body); color: #9db8ee; }  /* soft blue, from the same family as the bands */
+.card-stack { padding-bottom: 2px; }
+.slide .card-desc { color: var(--text); }
+.story-summary { max-width: 52ch; font: 500 18px/1.5 var(--font-body); color: var(--text); }
+.story-status { display: inline-flex; align-items: center; gap: 8px; font: 600 14px/1 var(--font-body); color: var(--text); }
+.story-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.story-label { margin-top: var(--space-md); }
+.story-text { font-size: 16px; line-height: 1.65; }
+.story { overflow: auto; }
+@media (min-width: 760px) {
+  .story-media { position: sticky; top: 0; align-self: start; }
+}
+
+.story-actions { margin: var(--space-sm) 0 var(--space-xs); }
+
+/* the strip clips everything inside it, including visually hidden text */
+.carousel { position: relative; }
+
+/* =====================================================================
+   10. PILLS AND THE CASE STUDY OVERLAY (picture on top, story below)
+   ===================================================================== */
+.card-stack, .story-stack { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  display: inline-flex; align-items: center; padding: 4px 11px; border-radius: var(--radius-pill);
+  background: rgba(58, 104, 192, 0.26); color: #c4d6fa;
+  font: 600 13px/1.3 var(--font-body); white-space: nowrap;
+}
+
+/* no visible scrollbar, the wheel and touch still scroll the overlay */
+.story { scrollbar-width: none; -ms-overflow-style: none; }
+.story::-webkit-scrollbar { display: none; }
+
+.story { width: min(1080px, calc(100vw - 32px)); }
+.story[open], .story { display: block; }
+.story-media { position: static; background: var(--sage); }
+.story-media img { display: block; width: 100%; height: 240px; aspect-ratio: auto; object-fit: cover; object-position: top center; }
+.story-body { display: grid; justify-items: start; gap: var(--space-md); padding: var(--space-xl) var(--space-2xl) var(--space-2xl); }
+.story-title { font-size: 44px; }
+.story-summary { max-width: 60ch; }
+.story-actions { margin: var(--space-sm) 0 var(--space-md); }
+
+.story-parts { display: grid; gap: var(--space-xl); width: 100%; margin-top: var(--space-md); padding-top: var(--space-xl); border-top: 1px solid var(--border); }
+.story-part { display: grid; gap: var(--space-sm); align-content: start; }
+.story-label { margin: 0; font: 700 26px/1.15 var(--font-display); letter-spacing: -0.01em; color: var(--text); }
+.story-label::before { content: ""; display: block; width: 36px; height: 4px; margin-bottom: 12px; border-radius: 2px; background: var(--accent); }
+.story-text { max-width: none; font-size: 16px; line-height: 1.7; color: var(--text-muted); }
+@media (min-width: 900px) {
+  .story-parts { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 759px) {
+  .story-body { padding: var(--space-lg); }
+  .story-title { font-size: 32px; }
+  .story-media img { height: 180px; }
+}
+
+@media (min-width: 900px) {
+  .story-media img { height: 260px; object-position: center; }
+  .story-body { grid-template-columns: 1fr auto; column-gap: var(--space-2xl); }
+  .story-body > * { grid-column: 1; }
+  .story-actions { grid-column: 2; grid-row: 1 / span 4; align-self: end; flex-direction: column; margin: 0; }
+  .story-actions .btn { justify-content: center; }
+  .story-body > .story-parts { grid-column: 1 / -1; }
+}
+
+.card-stack { margin-top: 6px; }
+
+/* a real screenshot with its own dark background: show all of it, no cropping */
+.shot-dark { object-fit: contain !important; background: #0f1417; }
+.card-media:has(.shot-dark), .story-media:has(.shot-dark) { background: #0f1417; }

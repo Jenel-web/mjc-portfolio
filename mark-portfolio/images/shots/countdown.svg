@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Screenshot placeholder for Countdown Math Arena">
+  <rect width="800" height="500" fill="#14213b"/>
+  <rect x="48" y="52" width="704" height="396" rx="14" fill="#0e182c"/>
+  <path d="M48 66a14 14 0 0 1 14-14h676a14 14 0 0 1 14 14v34H48Z" fill="#1c2f55"/>
+  <circle cx="76" cy="76" r="6" fill="#ff6a1a"/><circle cx="98" cy="76" r="6" fill="#3a68c0"/><circle cx="120" cy="76" r="6" fill="#3a68c0"/>
+  <rect x="150" y="66" width="360" height="20" rx="10" fill="#14213b"/>
+  <text x="400" y="282" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#eef3fc">Countdown Math Arena</text>
+  <text x="400" y="322" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#8da2c8">Screenshot goes here</text>
+</svg>
