@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 860" role="img" aria-label="Placeholder cut-out portrait">
+  <path d="M60 860c0-190 110-300 290-300s290 110 290 300Z" fill="#24468a"/>
+  <path d="M250 560h200v90c-30 40-170 40-200 0Z" fill="#2c559f"/>
+  <rect x="285" y="470" width="130" height="120" rx="40" fill="#3a68c0"/>
+  <ellipse cx="350" cy="330" rx="125" ry="150" fill="#3a68c0"/>
+  <text x="350" y="800" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" fill="#b6c4de">replace with a transparent PNG of you</text>
+</svg>

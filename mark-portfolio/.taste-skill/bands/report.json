@@ -1,0 +1,1449 @@
+{
+ "url": "http://127.0.0.1:5500/",
+ "at": "2026-10-25T10:10:08.717Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.69,
+    0.82,
+    0.73,
+    1,
+    0.82,
+    0.83
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 0,
+    "transitions": 5,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4561,
+     "screens": 5.1,
+     "words": 410,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 15,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Mark Jenel Cortas",
+     "words": 3,
+     "chars": 17,
+     "lines": 2,
+     "size": 96,
+     "vw": 6.7,
+     "font": "Space Grotesk",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.33,
+     "top": 238,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Mark Jenel Cortas",
+     "words": 3,
+     "lines": 2,
+     "size": 96,
+     "font": "Space Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Mark Jenel Cortas",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 238,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About me",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 912,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 1723,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "EconLens",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.32,
+      "top": 2214,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Pag-IBIG Housing Loan",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.32,
+      "top": 2214,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Countdown Math Arena",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 2429,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Skills and tools",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 2810,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Have a project in mind? Let’s work together",
+      "words": 8,
+      "chars": 43,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 3745,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.78,
+       "mono": false
+      },
+      {
+       "family": "Space Grotesk",
+       "share": 0.22,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      17,
+      18,
+      20,
+      22,
+      24,
+      30,
+      32,
+      40,
+      46,
+      96
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 17,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.6
+     },
+     "measureChars": 70,
+     "max": {
+      "size": 96,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "text": "Mark Jenel"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Open to internships",
+      "above": "Mark Jenel Cortas",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 131
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1220",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.49,
+      "l": 0.08
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#121d33",
+       "top": 1857,
+       "hsl": {
+        "h": 220,
+        "s": 0.48,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#1c3a78",
+       "top": 1858,
+       "hsl": {
+        "h": 220,
+        "s": 0.62,
+        "l": 0.29
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b6c4de",
+       "share": 0.54
+      },
+      {
+       "color": "#eef3fc",
+       "share": 0.39
+      },
+      {
+       "color": "#ff6a1a",
+       "share": 0.05
+      },
+      {
+       "color": "#0b1220",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ff6a1a",
+      "hsl": {
+       "h": 21,
+       "s": 1,
+       "l": 0.55
+      },
+      "fg": "#0b1220"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 4,
+     "radius": 10,
+     "height": 48,
+     "withShadow": 3,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Work With Me",
+      "View My Resume (PDF)",
+      "Work With Me"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 7,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "figure.about-media.frame → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "article.card → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "article.card → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 14,
+     "hairlineSamples": [
+      "header.nav 1440px",
+      "div.fact 595px",
+      "div.fact 595px",
+      "div.fact 595px",
+      "span.card-media 958px"
+     ],
+     "outlinedBoxes": 5,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 3018
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "inter",
+     "space grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4561,
+    "margins": {
+     "left": 192,
+     "right": 126
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero",
+      "tag": "section",
+      "top": 64,
+      "height": 752,
+      "words": 34,
+      "media": 1,
+      "middle": 71,
+      "heading": {
+       "text": "Mark Jenel",
+       "size": 96,
+       "tag": "h1"
+      },
+      "left": 192,
+      "right": 0,
+      "textLeft": 192,
+      "textRight": 775,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section",
+      "tag": "section",
+      "top": 816,
+      "height": 811,
+      "words": 88,
+      "media": 1,
+      "middle": 87,
+      "heading": {
+       "text": "About me",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 192,
+      "right": 203,
+      "textLeft": 192,
+      "textRight": 665,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.section",
+      "tag": "section",
+      "top": 1627,
+      "height": 1087,
+      "words": 84,
+      "media": 3,
+      "middle": 313,
+      "heading": {
+       "text": "Selected projects",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 192,
+      "right": 0,
+      "textLeft": 192,
+      "textRight": -740,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills.section",
+      "tag": "section",
+      "top": 2714,
+      "height": 871,
+      "words": 99,
+      "media": 0,
+      "middle": 70,
+      "heading": {
+       "text": "Skills and tools",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 192,
+      "right": 192,
+      "textLeft": 192,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section.contact",
+      "tag": "section",
+      "top": 3584,
+      "height": 578,
+      "words": 38,
+      "media": 0,
+      "middle": 133,
+      "heading": {
+       "text": "Have a project in mind? Let’s work together",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 257,
+      "right": 288,
+      "textLeft": 257,
+      "textRight": 288,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4162,
+      "height": 399,
+      "words": 37,
+      "media": 0,
+      "middle": 262,
+      "heading": {
+       "text": "Quick links",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 192,
+      "right": 192,
+      "textLeft": 192,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Mark Jenel Cortas",
+      "size": 96,
+      "top": 238,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 192,
+      "n": 9
+     },
+     {
+      "x": 257,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 17,
+    "stage": true,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.48,
+    0.98,
+    0.85,
+    0.75,
+    1,
+    0.76,
+    0.87
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 0,
+    "transitions": 5,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5794,
+     "screens": 6.9,
+     "words": 402,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 15,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Mark Jenel Cortas",
+     "words": 3,
+     "chars": 17,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
+     "font": "Space Grotesk",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.61,
+     "top": 216,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Mark Jenel Cortas",
+     "words": 3,
+     "lines": 2,
+     "size": 48,
+     "font": "Space Grotesk"
+    },
+    "headings": [
+     {
+      "text": "mjc_",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 21,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Mark Jenel Cortas",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 216,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About me",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1224,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected projects",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2519,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Countdown Math Arena",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 2880,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "EconLens",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.6,
+      "top": 2887,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Pag-IBIG Housing Loan",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.6,
+      "top": 2887,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Skills and tools",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3350,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Have a project in mind? Let’s work together",
+      "words": 8,
+      "chars": 43,
+      "lines": 3,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 4609,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "mjc_",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Space Grotesk",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 5176,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.78,
+       "mono": false
+      },
+      {
+       "family": "Space Grotesk",
+       "share": 0.22,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      26,
+      30,
+      48
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.6
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "Space Grotesk",
+      "text": "Mark Jenel"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 3
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1220",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.49,
+      "l": 0.08
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#121d33",
+       "top": 1977,
+       "hsl": {
+        "h": 220,
+        "s": 0.48,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b6c4de",
+       "share": 0.54
+      },
+      {
+       "color": "#eef3fc",
+       "share": 0.39
+      },
+      {
+       "color": "#ff6a1a",
+       "share": 0.06
+      },
+      {
+       "color": "#0b1220",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ff6a1a",
+      "hsl": {
+       "h": 21,
+       "s": 1,
+       "l": 0.55
+      },
+      "fg": "#0b1220"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 10,
+     "height": 48,
+     "withShadow": 2,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "View My Resume (PDF)",
+      "Work With Me"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 7,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "figure.about-media.frame → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "article.card → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+      "article.card → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 14,
+     "hairlineSamples": [
+      "header.nav 390px",
+      "div.fact 350px",
+      "div.fact 350px",
+      "div.fact 350px",
+      "span.card-media 318px"
+     ],
+     "outlinedBoxes": 5,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 3469
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 0.16
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "inter",
+     "space grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5794,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero",
+      "tag": "section",
+      "top": 64,
+      "height": 1064,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Mark Jenel",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section",
+      "tag": "section",
+      "top": 1128,
+      "height": 1296,
+      "words": 88,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "About me",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 26,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.section",
+      "tag": "section",
+      "top": 2423,
+      "height": 831,
+      "words": 84,
+      "media": 3,
+      "middle": 331,
+      "heading": {
+       "text": "Selected projects",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": -556,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#skills.section",
+      "tag": "section",
+      "top": 3254,
+      "height": 1210,
+      "words": 99,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Skills and tools",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 31,
+      "textLeft": 20,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section.contact",
+      "tag": "section",
+      "top": 4464,
+      "height": 651,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Have a project in mind? Let’s work together",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 53,
+      "right": 60,
+      "textLeft": 53,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5115,
+      "height": 679,
+      "words": 37,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "mjc",
+       "size": 22,
+       "tag": "a"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Mark Jenel Cortas",
+      "size": 48,
+      "top": 216,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 9
+     },
+     {
+      "x": 53,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 16,
+    "stage": true,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Open to internships\" (pill) above \"Mark Jenel Cortas\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "7 box-shadow(s) on elements at rest: a.btn.btn-primary → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px | figure.about-media.frame → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px | article.card → rgba(255, 255, 255, 0.06) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 1px 2px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "14 thin rule(s)/divider line(s): header.nav 1440px | div.fact 595px | div.fact 595px | div.fact 595px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "5 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (13, 14, 15, 17, 18, 20, 22, 24, 30, 32, 40, 46, 96).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt Switzer and Switzer, but the page renders Inter, Space Grotesk.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The page sits off-centre: its content comes to 192px from the left edge but only to 126px from the right, at 1440px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure)."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 5 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Have a project in mind? Let’s work together\" → 3 lines (8 words, 26px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 390,
+   "message": "3 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Administrator\\Downloads\\LearningOOP\\Portfolio Website\\mark-portfolio\\.taste-skill\\bands\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Administrator\\Downloads\\LearningOOP\\Portfolio Website\\mark-portfolio\\.taste-skill\\bands\\desktop-page-01.jpg",
+    "C:\\Users\\Administrator\\Downloads\\LearningOOP\\Portfolio Website\\mark-portfolio\\.taste-skill\\bands\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Administrator\\Downloads\\LearningOOP\\Portfolio Website\\mark-portfolio\\.taste-skill\\bands\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Administrator\\Downloads\\LearningOOP\\Portfolio Website\\mark-portfolio\\.taste-skill\\bands\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

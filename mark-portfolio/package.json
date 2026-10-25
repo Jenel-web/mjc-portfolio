@@ -1,0 +1,13 @@
+{
+  "name": "mark-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio of Mark Jenel Cortas",
+  "scripts": {
+    "dev": "live-server --port=5500 --open=/ --no-css-inject",
+    "start": "live-server --port=5500 --open=/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
