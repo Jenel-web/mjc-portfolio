@@ -633,3 +633,6 @@ body.story-open { overflow: hidden; }
   .about-grid { grid-template-columns: 0.8fr 1.2fr; }
   .about-media { order: -1; justify-self: start; }
 }
+
+/* the monitor screen is a little wider than 16:9, which suits browser screenshots */
+.monitor img, .slide .card-media .monitor img, .story-media .monitor img { aspect-ratio: 11 / 5; }

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Screenshot placeholder for EconLens">
-  <rect width="800" height="450" fill="#0e182c"/>
-  <text x="400" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700" fill="#eef3fc">EconLens</text>
-  <text x="400" y="262" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#8da2c8">Screenshot goes here</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" role="img" aria-label="Screenshot placeholder for EconLens">
+  <rect width="880" height="400" fill="#0e182c"/>
+  <text x="440" y="200" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#eef3fc">EconLens</text>
+  <text x="440" y="242" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#8da2c8">Screenshot goes here</text>
 </svg>
