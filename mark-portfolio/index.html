@@ -212,7 +212,7 @@
                 <!-- EDIT: what you're learning now -->
                 <dd>
                   <ul class="tag-list" aria-label="Currently learning">
-                    <li class="tag">Spring AI</li>
+                    <li class="tag">Cloud Basics</li>
                     <li class="tag">Docker</li>
                     <li class="tag">System design</li>
                   </ul>
@@ -239,7 +239,8 @@
           <div class="section-head">
             <h2 id="projects-title">Selected projects</h2>
             <p>
-              Five things I built. Open one to read the problem, the solution and the hardest part.
+              Five things I built. Open one to read the problem, the solution
+              and the hardest part.
             </p>
           </div>
           <div class="carousel-nav">
@@ -283,186 +284,676 @@
         </div>
         <div class="container carousel-wrap">
           <ul class="carousel" id="carousel" aria-label="Projects">
-          <li class="slide">
-            <article class="card">
-              <button class="card-open" type="button" data-project="countdown" aria-haspopup="dialog">
-                <span class="card-media"><img class="shot-dark" src="images/shots/countdown.png" alt="Countdown Math Arena home screen: the headline “Hit the Target. Beat the Clock. Outsmart Your Rival.” with Find a Match and Practice Board buttons" loading="lazy" width="994" height="566"></span>
-                <span class="card-body">
-                  <span class="card-title">Countdown Math Arena</span>
-                  <span class="card-desc">A real-time multiplayer math duel where two players race to hit a three-digit target using six numbers.</span>
-                  <span class="card-stack"><span class="sr-only">Built with </span><span class="pill">Next.js</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Express</span><span class="pill">Docker</span><span class="pill">Supabase</span><span class="pill">Socket.io</span><span class="pill">Tailwind</span></span>
-                  <span class="card-more">Read the case study<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                </span>
-              </button>
-              <template id="story-countdown">
-                <h3 class="story-title">Countdown Math Arena</h3>
-                <p class="story-summary">A real-time multiplayer math duel where two players race to hit a three-digit target using six numbers.</p>
-                <p class="story-stack"><span class="sr-only">Built with </span><span class="pill">Next.js</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Express</span><span class="pill">Docker</span><span class="pill">Supabase</span><span class="pill">Socket.io</span><span class="pill">Tailwind</span></p>
-                <div class="btn-group story-actions">
-                  <a class="btn btn-primary" href="https://countdowngame-multiplayer.vercel.app/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live Demo<span class="sr-only"> of Countdown Math Arena (opens in a new tab)</span></a>
-                  <a class="btn btn-secondary" href="https://github.com/Jenel-web/countdown-game" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>Source Code<span class="sr-only"> for Countdown Math Arena (opens in a new tab)</span></a>
-                </div>
-                <div class="story-parts">
-                <section class="story-part">
-                  <h4 class="story-label">Problem</h4>
-                  <p class="story-text">I first saw this numbers game on YouTube: players get six numbers and a three-digit target, and they have to reach it using basic operations before time runs out. I later saw it trending as a quick-solve challenge on Instagram. The catch is that it’s almost always played face to face, so there was no simple way to challenge a friend online.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Solution</h4>
-                  <p class="story-text">I built Countdown Math Arena so two players can play the game online in real time. Both players get the same numbers and target, the timer runs in sync, and the round ends with a fair result for both sides. It is playable by anyone, players can sign up using their google account or by making one in the site.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Hardest part</h4>
-                  <p class="story-text">I had little experience with TypeScript and had never built anything with WebSockets, so I learned the fundamentals first before building the real-time logic. To make sure the game felt right, I tested the edge cases myself by playing both sides of a two-player match, checking what happens when players answer at the same time, disconnect or run out of time.</p>
-                </section>
-              </div>
-              </template>
-            </article>
-          </li>
-          <li class="slide">
-            <article class="card">
-              <button class="card-open" type="button" data-project="econlens" aria-haspopup="dialog">
-                <span class="card-media"><img src="images/shots/econlens.svg" alt="EconLens screenshot" loading="lazy" width="800" height="500"></span>
-                <span class="card-body">
-                  <span class="card-title">EconLens</span>
-                  <span class="card-desc">A mobile app that turns economic news into plain-language explanations of how it affects an average Filipino’s daily life.</span>
-                  <span class="card-stack"><span class="sr-only">Built with </span><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Supabase</span><span class="pill">Python</span></span>
-                  <span class="card-more">Read the case study<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                </span>
-              </button>
-              <template id="story-econlens">
-                <h3 class="story-title">EconLens</h3>
-                <p class="story-summary">A mobile app that turns economic news into plain-language explanations of how it affects an average Filipino’s daily life.</p>
-                <p class="story-stack"><span class="sr-only">Built with </span><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Supabase</span><span class="pill">Python</span></p>
-                <p class="story-status">Status: Ongoing</p>
-                <div class="btn-group story-actions">
-                  <a class="btn btn-primary" href="https://github.com/Jenel-web/econlens" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>Source Code<span class="sr-only"> for EconLens (opens in a new tab)</span></a>
-                </div>
-                <div class="story-parts">
-                <section class="story-part">
-                  <h4 class="story-label">Problem</h4>
-                  <p class="story-text">Social media is full of news, but most of it doesn’t tell you what it means for you. When fuel prices climbed during a period of global conflict and shipping disruptions, headlines kept coming, but nobody explained what a 15-peso rise in gasoline would do to an ordinary household’s budget. The information was there; the meaning wasn’t.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Solution</h4>
-                  <p class="story-text">EconLens pulls economic news relevant to the Philippines through a news API and uses AI to explain each story in everyday terms. Every headline comes with an impact level, such as “high impact,” and a short breakdown of how it could affect an average Filipino, for example how much more they might spend on gasoline or rice.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Hardest part</h4>
-                  <p class="story-text">Getting the AI to give consistent answers was one challenge, and defining what “impact on an average Filipino” actually means was the harder one. There is no single average Filipino: a daily commuter, a motorcycle rider and someone who rarely drives all feel a fuel price hike very differently, so a single “you’ll spend ₱500 more” figure can be misleading. I had to decide how to define those everyday situations and measure impact in a way that stays realistic and consistent from one news story to the next.</p>
-                </section>
-              </div>
-              </template>
-            </article>
-          </li>
-          <li class="slide">
-            <article class="card">
-              <button class="card-open" type="button" data-project="pagibig" aria-haspopup="dialog">
-                <span class="card-media"><img src="images/shots/pagibig.svg" alt="Pag-IBIG Housing Loan App screenshot" loading="lazy" width="800" height="500"></span>
-                <span class="card-body">
-                  <span class="card-title">Pag-IBIG Housing Loan App</span>
-                  <span class="card-desc">A web app that digitalizes housing loan applications and previews monthly payments, built as a school project that I led.</span>
-                  <span class="card-stack"><span class="sr-only">Built with </span><span class="pill">Figma</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Spring Boot</span><span class="pill">Aiven</span><span class="pill">MySQL</span></span>
-                  <span class="card-more">Read the case study<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                </span>
-              </button>
-              <template id="story-pagibig">
-                <h3 class="story-title">Pag-IBIG Housing Loan App</h3>
-                <p class="story-summary">A web app that digitalizes housing loan applications and previews monthly payments, built as a school project that I led.</p>
-                <p class="story-stack"><span class="sr-only">Built with </span><span class="pill">Figma</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Spring Boot</span><span class="pill">Aiven</span><span class="pill">MySQL</span></p>
-                <div class="btn-group story-actions">
-                  <a class="btn btn-primary" href="https://github.com/Jenel-web/pagibig-housing-loan" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>Source Code<span class="sr-only"> for Pag-IBIG Housing Loan App (opens in a new tab)</span></a>
-                </div>
-                <div class="story-parts">
-                <section class="story-part">
-                  <h4 class="story-label">Problem</h4>
-                  <p class="story-text">Applying for a housing loan involves forms, supporting documents and, for many applicants, in-person steps. For our school project, we wanted to build a web version of that process, so applicants could file digitally and see what their monthly payments would look like before committing.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Solution</h4>
-                  <p class="story-text">We built a web app that lets an applicant fill out the loan application, submit it and preview the monthly amortization. I led a team of classmates and handled the technical direction.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Hardest part</h4>
-                  <p class="story-text">This was my first project with classmates, and most of them are heading into other areas of IT rather than software development. So the hardest part wasn’t only the code: I had to teach the team how to use AI tools well, which pages and folders were safe to edit, and how to navigate the database. I enjoyed it, and it pushed me to learn more so I could support them. One decision that helped was hosting our database on Aiven’s cloud instead of running MySQL locally, so nobody had to change environment variables every time they pulled from main.</p>
-                </section>
-              </div>
-              </template>
-            </article>
-          </li>
-          <li class="slide">
-            <article class="card">
-              <button class="card-open" type="button" data-project="cheatnono" aria-haspopup="dialog">
-                <span class="card-media"><img src="images/shots/cheatnono.svg" alt="CheatNoNo screenshot" loading="lazy" width="800" height="500"></span>
-                <span class="card-body">
-                  <span class="card-title">CheatNoNo</span>
-                  <span class="card-desc">A Chrome extension and admin dashboard that helps professors see suspicious activity during Google Forms exams, without accusing students.</span>
-                  <span class="card-stack"><span class="sr-only">Built with </span><span class="pill">Chrome Extension (Manifest V3)</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Supabase</span></span>
-                  <span class="card-more">Read the case study<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                </span>
-              </button>
-              <template id="story-cheatnono">
-                <h3 class="story-title">CheatNoNo</h3>
-                <p class="story-summary">A Chrome extension and admin dashboard that helps professors see suspicious activity during Google Forms exams, without accusing students.</p>
-                <p class="story-stack"><span class="sr-only">Built with </span><span class="pill">Chrome Extension (Manifest V3)</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Supabase</span></p>
-                <div class="btn-group story-actions">
-                  <a class="btn btn-primary" href="https://cheatnono.vercel.app/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live Demo<span class="sr-only"> of CheatNoNo (opens in a new tab)</span></a>
-                  <a class="btn btn-secondary" href="https://github.com/Jenel-web/google-forms-anticheat-system" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>Source Code<span class="sr-only"> for CheatNoNo (opens in a new tab)</span></a>
-                </div>
-                <div class="story-parts">
-                <section class="story-part">
-                  <h4 class="story-label">Problem</h4>
-                  <p class="story-text">Google Forms makes online exams easy to give, but it also makes them easy to cheat on: students can open another tab, ask an AI chatbot or message a classmate, and the professor sees none of it. Our teacher gave us a broad assignment (build something that detects or blocks cheating on Google Forms) with no instructions on how.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Solution</h4>
-                  <p class="story-text">I designed a two-part system. Professors use an admin app to run the exam and watch it live. Students install an extension that tracks their activity during the exam and blocks sites like AI chatbots and messaging platforms. The admin can see what each student does as it happens, such as tabbing out or switching tabs, and each student gets an integrity score. The score is meant to show activity that could affect integrity, not to accuse anyone of cheating, so the professor makes the final call. It only monitors student activity until they submit the exam to protect their privacy.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Hardest part</h4>
-                  <p class="story-text">The assignment was vague, so the hardest part was deciding what to build. I had to design the architecture and system flow myself: whether to track or block, what the student side should do versus the admin side, and how to report activity fairly. I chose to track and report instead of only blocking, and to frame the integrity score as a signal for review, not proof.</p>
-                </section>
-              </div>
-              </template>
-            </article>
-          </li>
-          <li class="slide">
-            <article class="card">
-              <button class="card-open" type="button" data-project="mjcinema" aria-haspopup="dialog">
-                <span class="card-media"><img src="images/shots/mjcinema.svg" alt="MJCINEMA screenshot" loading="lazy" width="800" height="500"></span>
-                <span class="card-body">
-                  <span class="card-title">MJCINEMA</span>
-                  <span class="card-desc">A full-stack cinema ticket booking system, and the first full-stack project I built on my own after learning Spring Boot.</span>
-                  <span class="card-stack"><span class="sr-only">Built with </span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Spring Boot</span><span class="pill">MySQL</span></span>
-                  <span class="card-more">Read the case study<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                </span>
-              </button>
-              <template id="story-mjcinema">
-                <h3 class="story-title">MJCINEMA</h3>
-                <p class="story-summary">A full-stack cinema ticket booking system, and the first full-stack project I built on my own after learning Spring Boot.</p>
-                <p class="story-stack"><span class="sr-only">Built with </span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Spring Boot</span><span class="pill">MySQL</span></p>
-                <div class="btn-group story-actions">
-                  <a class="btn btn-primary" href="https://mjcinemaapp.vercel.app/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live Demo<span class="sr-only"> of MJCINEMA (opens in a new tab)</span></a>
-                  <a class="btn btn-secondary" href="https://github.com/Jenel-web/MJCinema-Backend" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>Source Code<span class="sr-only"> for MJCINEMA (opens in a new tab)</span></a>
-                </div>
-                <div class="story-parts">
-                <section class="story-part">
-                  <h4 class="story-label">Why I built it</h4>
-                  <p class="story-text">I had just learned Spring Boot but had never built a full-stack project, and I didn’t yet know how to make a website. A cinema booking system was a good way to practice, because it covers the basic building blocks of web development, creating, reading, updating and deleting data, along with real business rules.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">What I built</h4>
-                  <p class="story-text">A web app where users can book cinema tickets. It handles the rules a real booking system needs: how many users can book a screening, preventing two people from booking the same seat at the same time, and how showtimes are scheduled. I built both the interface and the Spring Boot backend, with a MySQL database behind it.</p>
-                </section>
-                <section class="story-part">
-                  <h4 class="story-label">Hardest part</h4>
-                  <p class="story-text">Building the whole thing from scratch while I was still learning. I made a point of using AI as little as possible for debugging, so I had to work through problems myself. I also had to make the business decisions and design how the database tables connect to each other, and I did all of that on my own.</p>
-                </section>
-              </div>
-              </template>
-            </article>
-          </li>
-        </ul>
+            <li class="slide">
+              <article class="card">
+                <button
+                  class="card-open"
+                  type="button"
+                  data-project="countdown"
+                  aria-haspopup="dialog"
+                >
+                  <span class="card-media"><span class="monitor"><span class="monitor-bar" aria-hidden="true"><i></i><i></i><i></i></span><img width="994" height="566"
+                      class="shot-dark"
+                      src="images/shots/countdown.png"
+                      alt="Countdown Math Arena home screen: the headline “Hit the Target. Beat the Clock. Outsmart Your Rival.” with Find a Match and Practice Board buttons"
+                      loading="lazy"
+                     
+                     
+                  /></span></span>
+                  <span class="card-body">
+                    <span class="card-title">Countdown Math Arena</span>
+                    <span class="card-desc"
+                      >A real-time multiplayer math duel where two players race
+                      to hit a three-digit target using six numbers.</span
+                    >
+                    <span class="card-stack"
+                      ><span class="sr-only">Built with </span
+                      ><span class="pill">Next.js</span
+                      ><span class="pill">React</span
+                      ><span class="pill">TypeScript</span
+                      ><span class="pill">Express</span
+                      ><span class="pill">Docker</span
+                      ><span class="pill">Supabase</span
+                      ><span class="pill">Socket.io</span
+                      ><span class="pill">Tailwind</span></span
+                    >
+                    <span class="card-more"
+                      >Read the case study<svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                    ></span>
+                  </span>
+                </button>
+                <template id="story-countdown">
+                  <h3 class="story-title">Countdown Math Arena</h3>
+                  <p class="story-summary">
+                    A real-time multiplayer math duel where two players race to
+                    hit a three-digit target using six numbers.
+                  </p>
+                  <p class="story-stack">
+                    <span class="sr-only">Built with </span
+                    ><span class="pill">Next.js</span
+                    ><span class="pill">React</span
+                    ><span class="pill">TypeScript</span
+                    ><span class="pill">Express</span
+                    ><span class="pill">Docker</span
+                    ><span class="pill">Supabase</span
+                    ><span class="pill">Socket.io</span
+                    ><span class="pill">Tailwind</span>
+                  </p>
+                  <div class="btn-group story-actions">
+                    <a
+                      class="btn btn-primary"
+                      href="https://countdowngame-multiplayer.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M14 4h6v6" />
+                        <path d="M20 4 11 13" />
+                        <path
+                          d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"
+                        /></svg
+                      >Live Demo<span class="sr-only">
+                        of Countdown Math Arena (opens in a new tab)</span
+                      ></a
+                    >
+                    <a
+                      class="btn btn-secondary"
+                      href="https://github.com/Jenel-web/countdown-game"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
+                      >Source Code<span class="sr-only">
+                        for Countdown Math Arena (opens in a new tab)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="story-parts">
+                    <section class="story-part">
+                      <h4 class="story-label">Problem</h4>
+                      <p class="story-text">
+                        I first saw this numbers game on YouTube: players get
+                        six numbers and a three-digit target, and they have to
+                        reach it using basic operations before time runs out. I
+                        later saw it trending as a quick-solve challenge on
+                        Instagram. The catch is that it’s almost always played
+                        face to face, so there was no simple way to challenge a
+                        friend online.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Solution</h4>
+                      <p class="story-text">
+                        I built Countdown Math Arena so two players can play the
+                        game online in real time. Both players get the same
+                        numbers and target, the timer runs in sync, and the
+                        round ends with a fair result for both sides. It is
+                        playable by anyone, players can sign up using their
+                        google account or by making one in the site.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Hardest part</h4>
+                      <p class="story-text">
+                        I had little experience with TypeScript and had never
+                        built anything with WebSockets, so I learned the
+                        fundamentals first before building the real-time logic.
+                        To make sure the game felt right, I tested the edge
+                        cases myself by playing both sides of a two-player
+                        match, checking what happens when players answer at the
+                        same time, disconnect or run out of time.
+                      </p>
+                    </section>
+                  </div>
+                </template>
+              </article>
+            </li>
+            <li class="slide">
+              <article class="card">
+                <button
+                  class="card-open"
+                  type="button"
+                  data-project="econlens"
+                  aria-haspopup="dialog"
+                >
+                  <span class="card-media"><span class="monitor"><span class="monitor-bar" aria-hidden="true"><i></i><i></i><i></i></span><img width="800" height="450"
+                      src="images/shots/econlens.svg"
+                      alt="EconLens screenshot"
+                      loading="lazy"
+                     
+                     
+                  /></span></span>
+                  <span class="card-body">
+                    <span class="card-title">EconLens</span>
+                    <span class="card-desc"
+                      >A mobile app that turns economic news into plain-language
+                      explanations of how it affects an average Filipino’s daily
+                      life.</span
+                    >
+                    <span class="card-stack"
+                      ><span class="sr-only">Built with </span
+                      ><span class="pill">Flutter</span
+                      ><span class="pill">Dart</span
+                      ><span class="pill">Supabase</span
+                      ><span class="pill">Python</span></span
+                    >
+                    <span class="card-more"
+                      >Read the case study<svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                    ></span>
+                  </span>
+                </button>
+                <template id="story-econlens">
+                  <h3 class="story-title">EconLens</h3>
+                  <p class="story-summary">
+                    A mobile app that turns economic news into plain-language
+                    explanations of how it affects an average Filipino’s daily
+                    life.
+                  </p>
+                  <p class="story-stack">
+                    <span class="sr-only">Built with </span
+                    ><span class="pill">Flutter</span
+                    ><span class="pill">Dart</span
+                    ><span class="pill">Supabase</span
+                    ><span class="pill">Python</span>
+                  </p>
+                  <p class="story-status">Status: Ongoing</p>
+                  <div class="btn-group story-actions">
+                    <a
+                      class="btn btn-primary"
+                      href="https://github.com/Jenel-web/econlens"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
+                      >Source Code<span class="sr-only">
+                        for EconLens (opens in a new tab)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="story-parts">
+                    <section class="story-part">
+                      <h4 class="story-label">Problem</h4>
+                      <p class="story-text">
+                        Social media is full of news, but most of it doesn’t
+                        tell you what it means for you. When fuel prices climbed
+                        during a period of global conflict and shipping
+                        disruptions, headlines kept coming, but nobody explained
+                        what a 15-peso rise in gasoline would do to an ordinary
+                        household’s budget. The information was there; the
+                        meaning wasn’t.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Solution</h4>
+                      <p class="story-text">
+                        EconLens pulls economic news relevant to the Philippines
+                        through a news API and uses AI to explain each story in
+                        everyday terms. Every headline comes with an impact
+                        level, such as “high impact,” and a short breakdown of
+                        how it could affect an average Filipino, for example how
+                        much more they might spend on gasoline or rice.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Hardest part</h4>
+                      <p class="story-text">
+                        Getting the AI to give consistent answers was one
+                        challenge, and defining what “impact on an average
+                        Filipino” actually means was the harder one. There is no
+                        single average Filipino: a daily commuter, a motorcycle
+                        rider and someone who rarely drives all feel a fuel
+                        price hike very differently, so a single “you’ll spend
+                        ₱500 more” figure can be misleading. I had to decide how
+                        to define those everyday situations and measure impact
+                        in a way that stays realistic and consistent from one
+                        news story to the next.
+                      </p>
+                    </section>
+                  </div>
+                </template>
+              </article>
+            </li>
+            <li class="slide">
+              <article class="card">
+                <button
+                  class="card-open"
+                  type="button"
+                  data-project="pagibig"
+                  aria-haspopup="dialog"
+                >
+                  <span class="card-media"><span class="monitor"><span class="monitor-bar" aria-hidden="true"><i></i><i></i><i></i></span><img width="800" height="450"
+                      src="images/shots/pagibig.svg"
+                      alt="Pag-IBIG Housing Loan App screenshot"
+                      loading="lazy"
+                     
+                     
+                  /></span></span>
+                  <span class="card-body">
+                    <span class="card-title">Pag-IBIG Housing Loan App</span>
+                    <span class="card-desc"
+                      >A web app that digitalizes housing loan applications and
+                      previews monthly payments, built as a school project that
+                      I led.</span
+                    >
+                    <span class="card-stack"
+                      ><span class="sr-only">Built with </span
+                      ><span class="pill">Figma</span
+                      ><span class="pill">React</span
+                      ><span class="pill">TypeScript</span
+                      ><span class="pill">Spring Boot</span
+                      ><span class="pill">Aiven</span
+                      ><span class="pill">MySQL</span></span
+                    >
+                    <span class="card-more"
+                      >Read the case study<svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                    ></span>
+                  </span>
+                </button>
+                <template id="story-pagibig">
+                  <h3 class="story-title">Pag-IBIG Housing Loan App</h3>
+                  <p class="story-summary">
+                    A web app that digitalizes housing loan applications and
+                    previews monthly payments, built as a school project that I
+                    led.
+                  </p>
+                  <p class="story-stack">
+                    <span class="sr-only">Built with </span
+                    ><span class="pill">Figma</span
+                    ><span class="pill">React</span
+                    ><span class="pill">TypeScript</span
+                    ><span class="pill">Spring Boot</span
+                    ><span class="pill">Aiven</span
+                    ><span class="pill">MySQL</span>
+                  </p>
+                  <div class="btn-group story-actions">
+                    <a
+                      class="btn btn-primary"
+                      href="https://github.com/Jenel-web/pagibig-housing-loan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
+                      >Source Code<span class="sr-only">
+                        for Pag-IBIG Housing Loan App (opens in a new tab)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="story-parts">
+                    <section class="story-part">
+                      <h4 class="story-label">Problem</h4>
+                      <p class="story-text">
+                        Applying for a housing loan involves forms, supporting
+                        documents and, for many applicants, in-person steps. For
+                        our school project, we wanted to build a web version of
+                        that process, so applicants could file digitally and see
+                        what their monthly payments would look like before
+                        committing.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Solution</h4>
+                      <p class="story-text">
+                        We built a web app that lets an applicant fill out the
+                        loan application, submit it and preview the monthly
+                        amortization. I led a team of classmates and handled the
+                        technical direction.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Hardest part</h4>
+                      <p class="story-text">
+                        This was my first project with classmates, and most of
+                        them are heading into other areas of IT rather than
+                        software development. So the hardest part wasn’t only
+                        the code: I had to teach the team how to use AI tools
+                        well, which pages and folders were safe to edit, and how
+                        to navigate the database. I enjoyed it, and it pushed me
+                        to learn more so I could support them. One decision that
+                        helped was hosting our database on Aiven’s cloud instead
+                        of running MySQL locally, so nobody had to change
+                        environment variables every time they pulled from main.
+                      </p>
+                    </section>
+                  </div>
+                </template>
+              </article>
+            </li>
+            <li class="slide">
+              <article class="card">
+                <button
+                  class="card-open"
+                  type="button"
+                  data-project="cheatnono"
+                  aria-haspopup="dialog"
+                >
+                  <span class="card-media"><span class="monitor"><span class="monitor-bar" aria-hidden="true"><i></i><i></i><i></i></span><img width="800" height="450"
+                      src="images/shots/cheatnono.svg"
+                      alt="CheatNoNo screenshot"
+                      loading="lazy"
+                     
+                     
+                  /></span></span>
+                  <span class="card-body">
+                    <span class="card-title">CheatNoNo</span>
+                    <span class="card-desc"
+                      >A Chrome extension and admin dashboard that helps
+                      professors see suspicious activity during Google Forms
+                      exams, without accusing students.</span
+                    >
+                    <span class="card-stack"
+                      ><span class="sr-only">Built with </span
+                      ><span class="pill">Chrome Extension (Manifest V3)</span
+                      ><span class="pill">HTML</span
+                      ><span class="pill">CSS</span
+                      ><span class="pill">JavaScript</span
+                      ><span class="pill">Supabase</span></span
+                    >
+                    <span class="card-more"
+                      >Read the case study<svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                    ></span>
+                  </span>
+                </button>
+                <template id="story-cheatnono">
+                  <h3 class="story-title">CheatNoNo</h3>
+                  <p class="story-summary">
+                    A Chrome extension and admin dashboard that helps professors
+                    see suspicious activity during Google Forms exams, without
+                    accusing students.
+                  </p>
+                  <p class="story-stack">
+                    <span class="sr-only">Built with </span
+                    ><span class="pill">Chrome Extension (Manifest V3)</span
+                    ><span class="pill">HTML</span><span class="pill">CSS</span
+                    ><span class="pill">JavaScript</span
+                    ><span class="pill">Supabase</span>
+                  </p>
+                  <div class="btn-group story-actions">
+                    <a
+                      class="btn btn-primary"
+                      href="https://cheatnono.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M14 4h6v6" />
+                        <path d="M20 4 11 13" />
+                        <path
+                          d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"
+                        /></svg
+                      >Live Demo<span class="sr-only">
+                        of CheatNoNo (opens in a new tab)</span
+                      ></a
+                    >
+                    <a
+                      class="btn btn-secondary"
+                      href="https://github.com/Jenel-web/google-forms-anticheat-system"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
+                      >Source Code<span class="sr-only">
+                        for CheatNoNo (opens in a new tab)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="story-parts">
+                    <section class="story-part">
+                      <h4 class="story-label">Problem</h4>
+                      <p class="story-text">
+                        Google Forms makes online exams easy to give, but it
+                        also makes them easy to cheat on: students can open
+                        another tab, ask an AI chatbot or message a classmate,
+                        and the professor sees none of it. Our teacher gave us a
+                        broad assignment (build something that detects or blocks
+                        cheating on Google Forms) with no instructions on how.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Solution</h4>
+                      <p class="story-text">
+                        I designed a two-part system. Professors use an admin
+                        app to run the exam and watch it live. Students install
+                        an extension that tracks their activity during the exam
+                        and blocks sites like AI chatbots and messaging
+                        platforms. The admin can see what each student does as
+                        it happens, such as tabbing out or switching tabs, and
+                        each student gets an integrity score. The score is meant
+                        to show activity that could affect integrity, not to
+                        accuse anyone of cheating, so the professor makes the
+                        final call. It only monitors student activity until they
+                        submit the exam to protect their privacy.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Hardest part</h4>
+                      <p class="story-text">
+                        The assignment was vague, so the hardest part was
+                        deciding what to build. I had to design the architecture
+                        and system flow myself: whether to track or block, what
+                        the student side should do versus the admin side, and
+                        how to report activity fairly. I chose to track and
+                        report instead of only blocking, and to frame the
+                        integrity score as a signal for review, not proof.
+                      </p>
+                    </section>
+                  </div>
+                </template>
+              </article>
+            </li>
+            <li class="slide">
+              <article class="card">
+                <button
+                  class="card-open"
+                  type="button"
+                  data-project="mjcinema"
+                  aria-haspopup="dialog"
+                >
+                  <span class="card-media"><span class="monitor"><span class="monitor-bar" aria-hidden="true"><i></i><i></i><i></i></span><img width="800" height="450"
+                      src="images/shots/mjcinema.svg"
+                      alt="MJCINEMA screenshot"
+                      loading="lazy"
+                     
+                     
+                  /></span></span>
+                  <span class="card-body">
+                    <span class="card-title">MJCINEMA</span>
+                    <span class="card-desc"
+                      >A full-stack cinema ticket booking system, and the first
+                      full-stack project I built on my own after learning Spring
+                      Boot.</span
+                    >
+                    <span class="card-stack"
+                      ><span class="sr-only">Built with </span
+                      ><span class="pill">HTML</span
+                      ><span class="pill">CSS</span
+                      ><span class="pill">JavaScript</span
+                      ><span class="pill">Spring Boot</span
+                      ><span class="pill">MySQL</span></span
+                    >
+                    <span class="card-more"
+                      >Read the case study<svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                    ></span>
+                  </span>
+                </button>
+                <template id="story-mjcinema">
+                  <h3 class="story-title">MJCINEMA</h3>
+                  <p class="story-summary">
+                    A full-stack cinema ticket booking system, and the first
+                    full-stack project I built on my own after learning Spring
+                    Boot.
+                  </p>
+                  <p class="story-stack">
+                    <span class="sr-only">Built with </span
+                    ><span class="pill">HTML</span><span class="pill">CSS</span
+                    ><span class="pill">JavaScript</span
+                    ><span class="pill">Spring Boot</span
+                    ><span class="pill">MySQL</span>
+                  </p>
+                  <div class="btn-group story-actions">
+                    <a
+                      class="btn btn-primary"
+                      href="https://mjcinemaapp.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M14 4h6v6" />
+                        <path d="M20 4 11 13" />
+                        <path
+                          d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"
+                        /></svg
+                      >Live Demo<span class="sr-only">
+                        of MJCINEMA (opens in a new tab)</span
+                      ></a
+                    >
+                    <a
+                      class="btn btn-secondary"
+                      href="https://github.com/Jenel-web/MJCinema-Backend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
+                      >Source Code<span class="sr-only">
+                        for MJCINEMA (opens in a new tab)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="story-parts">
+                    <section class="story-part">
+                      <h4 class="story-label">Why I built it</h4>
+                      <p class="story-text">
+                        I had just learned Spring Boot but had never built a
+                        full-stack project, and I didn’t yet know how to make a
+                        website. A cinema booking system was a good way to
+                        practice, because it covers the basic building blocks of
+                        web development, creating, reading, updating and
+                        deleting data, along with real business rules.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">What I built</h4>
+                      <p class="story-text">
+                        A web app where users can book cinema tickets. It
+                        handles the rules a real booking system needs: how many
+                        users can book a screening, preventing two people from
+                        booking the same seat at the same time, and how
+                        showtimes are scheduled. I built both the interface and
+                        the Spring Boot backend, with a MySQL database behind
+                        it.
+                      </p>
+                    </section>
+                    <section class="story-part">
+                      <h4 class="story-label">Hardest part</h4>
+                      <p class="story-text">
+                        Building the whole thing from scratch while I was still
+                        learning. I made a point of using AI as little as
+                        possible for debugging, so I had to work through
+                        problems myself. I also had to make the business
+                        decisions and design how the database tables connect to
+                        each other, and I did all of that on my own.
+                      </p>
+                    </section>
+                  </div>
+                </template>
+              </article>
+            </li>
+          </ul>
         </div>
         <dialog class="story" id="story" aria-labelledby="story-heading">
           <button class="story-close" type="button" aria-label="Close">
@@ -493,13 +984,19 @@
           <ul class="uses">
             <li class="use">
               <h3>Real-time features</h3>
-              <p class="use-tools">Next.js, React, TypeScript, Express, Socket.io, Supabase, Docker</p>
+              <p class="use-tools">
+                Next.js, React, TypeScript, Express, Socket.io, Supabase, Docker
+              </p>
               <p class="use-where">Used in Countdown Math Arena</p>
             </li>
             <li class="use">
               <h3>Servers and data</h3>
-              <p class="use-tools">Java, Spring Boot, MySQL, Aiven, Supabase, Python</p>
-              <p class="use-where">Used in Pag-IBIG Housing Loan App, MJCINEMA and EconLens</p>
+              <p class="use-tools">
+                Java, Spring Boot, MySQL, Aiven, Supabase, Python
+              </p>
+              <p class="use-where">
+                Used in Pag-IBIG Housing Loan App, MJCINEMA and EconLens
+              </p>
             </li>
             <li class="use">
               <h3>Mobile</h3>
@@ -508,18 +1005,27 @@
             </li>
             <li class="use">
               <h3>Interfaces</h3>
-              <p class="use-tools">React, TypeScript, JavaScript, HTML, CSS, Tailwind, Figma</p>
-              <p class="use-where">Used in Pag-IBIG Housing Loan App, MJCINEMA, CheatNoNo and Countdown Math Arena</p>
+              <p class="use-tools">
+                React, TypeScript, JavaScript, HTML, CSS, Tailwind, Figma
+              </p>
+              <p class="use-where">
+                Used in Pag-IBIG Housing Loan App, MJCINEMA, CheatNoNo and
+                Countdown Math Arena
+              </p>
             </li>
             <li class="use">
               <h3>Browser extensions</h3>
-              <p class="use-tools">Chrome Extension (Manifest V3), JavaScript</p>
+              <p class="use-tools">
+                Chrome Extension (Manifest V3), JavaScript
+              </p>
               <p class="use-where">Used in CheatNoNo</p>
             </li>
             <li class="use">
               <h3>Building with AI</h3>
-              <p class="use-tools">AI coding tools that I direct while I own the design and the debugging</p>
-              <p class="use-where">Used in EconLens and Pag-IBIG Housing Loan App</p>
+              <p class="use-tools">Claude, Gemini, ChatGPT</p>
+              <p class="use-where">
+                Used in EconLens and Pag-IBIG Housing Loan App
+              </p>
             </li>
             <li class="use">
               <h3>Everyday tools</h3>

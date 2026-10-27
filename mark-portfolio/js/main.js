@@ -58,9 +58,9 @@ let lastCard = null;
 
 function openStory(card) {
   const tpl = document.getElementById('story-' + card.dataset.project);
-  const img = card.querySelector('.card-media img');
-  storyMedia.replaceChildren(img.cloneNode(false));
-  storyMedia.firstChild.removeAttribute('loading');
+  const monitor = card.querySelector('.monitor').cloneNode(true);
+  monitor.querySelector('img').removeAttribute('loading');
+  storyMedia.replaceChildren(monitor);
   storyBody.replaceChildren(tpl.content.cloneNode(true));
   const heading = storyBody.querySelector('.story-title');
   if (heading) heading.id = 'story-heading';

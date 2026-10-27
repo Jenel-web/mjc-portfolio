@@ -570,7 +570,8 @@ body.story-open { overflow: hidden; }
 .story::-webkit-scrollbar { display: none; }
 
 .story { width: min(1080px, calc(100vw - 32px)); }
-.story[open], .story { display: block; }
+.story[open] { display: block; }
+.story:not([open]) { display: none; }
 .story-media { position: static; background: var(--sage); }
 .story-media img { display: block; width: 100%; height: 240px; aspect-ratio: auto; object-fit: cover; object-position: top center; }
 .story-body { display: grid; justify-items: start; gap: var(--space-md); padding: var(--space-xl) var(--space-2xl) var(--space-2xl); }
@@ -605,4 +606,30 @@ body.story-open { overflow: hidden; }
 
 /* a real screenshot with its own dark background: show all of it, no cropping */
 .shot-dark { object-fit: contain !important; background: #0f1417; }
-.card-media:has(.shot-dark), .story-media:has(.shot-dark) { background: #0f1417; }
+
+
+
+/* =====================================================================
+   11. THE MONITOR: the picture sits in a small screen inside the card top
+   ===================================================================== */
+.slide .card-media, .story-media {
+  display: grid; place-items: center; aspect-ratio: auto;
+  padding: 28px 32px; background: #172746; border-bottom: 0;
+}
+.monitor { display: block; width: 100%; overflow: hidden; border-radius: 12px; background: #0e182c; border: 1px solid rgba(190, 210, 255, 0.18); }
+.monitor-bar { display: flex; align-items: center; gap: 6px; height: 26px; padding: 0 12px; background: #1c2f55; }
+.monitor-bar i { width: 8px; height: 8px; border-radius: 50%; background: #3a68c0; }
+.monitor-bar i:first-child { background: var(--accent); }
+.monitor img, .slide .card-media .monitor img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #0e182c; }
+.monitor img.shot-dark { object-fit: contain !important; background: #0f1417; }
+
+/* the pop-up shows the same monitor, a little smaller and centred */
+.story-media { padding: 32px 24px; }
+.story-media .monitor { width: min(560px, 100%); }
+.story-media .monitor img { height: auto; aspect-ratio: 16 / 9; object-position: center; }
+
+/* About: picture on the left, the text on the right (desktop); on a phone the text stays first */
+@media (min-width: 760px) {
+  .about-grid { grid-template-columns: 0.8fr 1.2fr; }
+  .about-media { order: -1; justify-self: start; }
+}
