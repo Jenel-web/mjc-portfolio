@@ -39,3 +39,21 @@ mark-portfolio/
 ## Publishing
 
 Push the folder to a GitHub repo and turn on GitHub Pages, or drag the folder into Netlify or Vercel. It works as is.
+
+## Checking how it looks (Playwright)
+
+Playwright opens the site in a real browser (Chromium) and checks it. It is already installed.
+
+```
+npm test             run every check (desktop, tablet, phone, pop-up, buttons, resume)
+npm run shots        only take full-page screenshots, saved in ../playwright-output/screenshots/
+npm run test:ui      open Playwright's window to watch and re-run checks
+npm run test:report  open the last report in your browser
+```
+
+The tests are in `tests/portfolio.spec.js`. `npm test` starts the site itself on port 5501, so `npm run dev` can stay running.
+
+### Responsive check
+
+`npm run test:responsive` loads the page at 12 widths (320px phones up to 2560px monitors, which also covers browser zoom) and reports anything that breaks: sideways scrolling, things sticking out, text that is too small, buttons that are hard to tap, the hero name wrapping, project cards of different sizes, and pictures that come after their text on phones.
+Results and screenshots are saved in `../playwright-output/` (outside the site folder, so the live server does not reload while tests run).

@@ -650,3 +650,138 @@ body.story-open { overflow: hidden; }
 /* a little more room above the monitor so the status badge never overlaps it */
 .slide .card-media { padding-top: 44px; }
 .card-badge { top: 12px; right: 12px; padding: 5px 12px 5px 10px; font-size: 13px; }
+
+/* =====================================================================
+   12. RESPONSIVE FIXES (found with the Playwright audit, tests/responsive.spec.js)
+   ===================================================================== */
+/* hero name: steps down as the column gets narrower so it always fits on two lines */
+@media (min-width: 760px) and (max-width: 899px) { .hero-name { font-size: 60px; } }
+@media (min-width: 900px) and (max-width: 1179px) { .hero-name { font-size: 78px; } }
+@media (min-width: 1180px) { .hero-name { font-size: 96px; } }
+
+/* comfortable tap targets */
+.nav-logo { display: inline-flex; align-items: center; min-height: 44px; }
+.footer-links a { display: inline-block; padding: 10px 0; }
+.footer-email { display: inline-block; padding: 10px 0; margin-bottom: 0; }
+.footer-bottom a { display: inline-block; padding: 10px 0; }
+.banner-email {
+  display: inline-block; padding: 10px 0; border-bottom: 0;
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 6px;
+}
+
+/* project cards: never let long content stretch one card wider than the others */
+.slide { min-width: 0; }
+.card-stack .pill, .story-stack .pill { max-width: 100%; white-space: normal; }
+
+/* phones and small tablets: the picture comes before its details */
+@media (max-width: 759px) {
+  .hero-grid { gap: var(--space-md); }
+  .hero-photo { order: -1; padding: 0; justify-content: center; align-self: auto; }
+  .hero-photo img { max-width: 100%; max-height: 260px; width: auto; margin-inline: auto; }
+  .hero-copy { padding-bottom: var(--space-2xl); }
+  .about-media { order: -1; justify-self: center; max-width: 360px; }
+}
+.footer-links a { padding-inline: 10px; margin-left: -10px; }
+@media (max-width: 759px) { .hero-photo img { max-height: min(260px, 32svh); } }
+
+/* phones: the arrows move below the heading, and the cards use less padding so the picture and text get more room */
+@media (max-width: 759px) {
+  .projects-head { flex-direction: column; align-items: stretch; gap: 0; }
+  .projects-head .section-head { margin-bottom: var(--space-lg); }
+  .carousel-nav { justify-content: flex-end; margin-bottom: var(--space-md); }
+  .slide .card-media { padding: 44px 14px 18px; }
+  .slide .card-body { padding: var(--space-lg) var(--space-lg) var(--space-xl); }
+  .slide .card-title { font-size: 24px; }
+  .story-media { padding: 24px 14px; }
+}
+
+/* =====================================================================
+   13. FOOTER WITHOUT QUICK LINKS, AND TIGHTER PHONE SPACING
+   ===================================================================== */
+@media (min-width: 760px) { .footer-grid { grid-template-columns: 1.6fr 1fr; } }
+
+@media (max-width: 759px) {
+  /* each section gets less space above and below it */
+  .section { padding-block: 44px; }
+  .section:last-of-type, .contact { padding-bottom: 44px; }
+  .section-head { margin-bottom: var(--space-lg); }
+  .hero { padding-block: var(--space-lg) 0; }
+  .hero-copy { gap: var(--space-md); padding-bottom: var(--space-xl); }
+  .about-grid { gap: var(--space-lg); }
+  .about-copy { gap: var(--space-sm); }
+  .facts { margin-top: var(--space-sm); }
+  .fact { padding: 10px 0; }
+  .use { padding: var(--space-md) 0; }
+  .banner { padding: var(--space-xl) var(--space-lg); gap: var(--space-lg); }
+  .footer { padding: var(--space-xl) 0 var(--space-lg); }
+  .footer-grid { gap: var(--space-lg); }
+  .footer-bottom { margin-top: var(--space-lg); }
+
+  /* projects: all five cards stacked top to bottom, no arrows */
+  .carousel-nav { display: none; }
+  .projects-head .section-head { margin-bottom: var(--space-lg); }
+  .carousel { display: grid; gap: var(--space-lg); overflow: visible; padding: 0; scroll-snap-type: none; }
+  .slide { flex: none; width: 100%; }
+}
+
+.footer-bottom { align-items: center; }
+
+/* =====================================================================
+   14. SKILLS AS LOGO PILLS (same look as the stack pills on the projects)
+   ===================================================================== */
+.use { grid-template-columns: 1fr; gap: var(--space-sm) var(--space-lg); align-items: start; }
+@media (min-width: 760px) { .use { grid-template-columns: 1fr 3fr; } }
+.use h3 { padding-top: 6px; }
+.use-body { display: grid; gap: var(--space-sm); min-width: 0; }
+.skill-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.skill-pill {
+  display: inline-flex; align-items: center; gap: 9px; padding: 8px 15px 8px 12px; border-radius: var(--radius-pill);
+  background: rgba(58, 104, 192, 0.26); color: #d2e0fb; font: 600 15px/1.2 var(--font-body);
+}
+.tech-icon {
+  flex: none; width: 18px; height: 18px; background: currentColor;
+  -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat;
+}
+.use-note { font-size: 15px; color: var(--text-muted); }
+@media (max-width: 759px) { .skill-pill { font-size: 14px; padding: 7px 13px 7px 10px; } }
+
+/* skills pills: orange instead of blue */
+.skill-pill { background: rgba(255, 106, 26, 0.22); color: #ffd6bd; }
+.skill-pill { background: var(--accent); color: var(--on-accent); }
+
+/* =====================================================================
+   15. SKILL PILLS: back to blue, easier to see, with coloured logos
+   ===================================================================== */
+.skill-pill {
+  background: rgba(64, 112, 214, 0.42); color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(150, 190, 255, 0.38);
+}
+.tech-icon { background: var(--brand, currentColor); }
+
+/* brand colours, lightened where the real colour is too dark to see on blue */
+.tech-icon[style*="/nextdotjs"], .tech-icon[style*="/express"], .tech-icon[style*="/socketdotio"], .tech-icon[style*="/github"] { --brand: #ffffff; }
+.tech-icon[style*="/react"] { --brand: #61dafb; }
+.tech-icon[style*="/typescript"] { --brand: #6fb1ff; }
+.tech-icon[style*="/javascript"] { --brand: #f7df1e; }
+.tech-icon[style*="/supabase"] { --brand: #3ecf8e; }
+.tech-icon[style*="/docker"] { --brand: #4fb3ff; }
+.tech-icon[style*="/openjdk"] { --brand: #ffa733; }
+.tech-icon[style*="/springboot"] { --brand: #7fd14b; }
+.tech-icon[style*="/mysql"] { --brand: #7db9e8; }
+.tech-icon[style*="/aiven"] { --brand: #ff6b81; }
+.tech-icon[style*="/python"] { --brand: #ffd43b; }
+.tech-icon[style*="/flutter"] { --brand: #54c5f8; }
+.tech-icon[style*="/dart"] { --brand: #40c4ff; }
+.tech-icon[style*="/html5"] { --brand: #ff7043; }
+.tech-icon[style*="/css3"] { --brand: #4fc3f7; }
+.tech-icon[style*="/tailwindcss"] { --brand: #2dd4e4; }
+.tech-icon[style*="/figma"] { --brand: #ff7262; }
+.tech-icon[style*="/googlechrome"] { --brand: #8ab4f8; }
+.tech-icon[style*="/git."], .tech-icon[style*="/git)"] { --brand: #ff6a4d; }
+.tech-icon[style*="/postman"] { --brand: #ff8a5c; }
+.tech-icon[style*="/vite"] { --brand: #a9a4ff; }
+.tech-icon[style*="/vitest"] { --brand: #a5d84a; }
+.tech-icon[style*="/claude"] { --brand: #e8946f; }
+.tech-icon[style*="/antigravity"] { --brand: #a8c7fa; }
+.tech-icon[style*="/googlegemini"] { --brand: #b4a0ff; }
+.tech-icon[style*="/openai"] { --brand: #6fd3b5; }

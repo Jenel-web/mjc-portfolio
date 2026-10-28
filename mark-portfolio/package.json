@@ -5,9 +5,15 @@
   "description": "Portfolio of Mark Jenel Cortas",
   "scripts": {
     "dev": "live-server --port=5500 --open=/ --no-css-inject",
-    "start": "live-server --port=5500 --open=/"
+    "start": "live-server --port=5500 --open=/",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "shots": "playwright test -g \"full-page screenshot\"",
+    "test:responsive": "playwright test tests/responsive.spec.js"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "live-server": "^1.2.2"
   }
 }
