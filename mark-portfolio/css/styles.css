@@ -636,3 +636,17 @@ body.story-open { overflow: hidden; }
 
 /* the monitor screen is a little wider than 16:9, which suits browser screenshots */
 .monitor img, .slide .card-media .monitor img, .story-media .monitor img { aspect-ratio: 11 / 5; }
+
+/* status badge, top right of a project card (EconLens is still being built) */
+.card { position: relative; }
+.card-badge {
+  position: absolute; top: 14px; right: 14px; z-index: 2; pointer-events: none;
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 12px; border-radius: var(--radius-pill);
+  background: rgba(255, 106, 26, 0.18); color: #ffb98a; border: 1px solid rgba(255, 106, 26, 0.45);
+  font: 600 13px/1.2 var(--font-body);
+}
+.card-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+/* a little more room above the monitor so the status badge never overlaps it */
+.slide .card-media { padding-top: 44px; }
+.card-badge { top: 12px; right: 12px; padding: 5px 12px 5px 10px; font-size: 13px; }
