@@ -1,0 +1,370 @@
+- generic [active] [ref=f6e1]:
+  - link "Skip to content" [ref=f6e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f6e3]:
+    - link "Mark Jenel Cortas, home" [ref=f6e4] [cursor=pointer]:
+      - /url: "#home"
+      - text: MJC
+    - navigation "Main" [ref=f6e5]:
+      - list [ref=f6e6]:
+        - listitem [ref=f6e7]:
+          - link "Work" [ref=f6e8] [cursor=pointer]:
+            - /url: "#work"
+        - listitem [ref=f6e9]:
+          - link "About" [ref=f6e10] [cursor=pointer]:
+            - /url: "#about"
+        - listitem [ref=f6e11]:
+          - link "Tools" [ref=f6e12] [cursor=pointer]:
+            - /url: "#uses"
+        - listitem [ref=f6e13]:
+          - link "Contact" [ref=f6e14] [cursor=pointer]:
+            - /url: "#contact"
+        - listitem [ref=f6e15]:
+          - link "Email me" [ref=f6e16] [cursor=pointer]:
+            - /url: mailto:markjenelcortas29@gmail.com?subject=Let's%20work%20together
+  - main [ref=f6e17]:
+    - region [ref=f6e18]:
+      - figure [ref=f6e19]:
+        - paragraph [ref=f6e20]:
+          - text: "Now: building EconLens, an app that explains economic news in plain Filipino."
+          - generic [ref=f6e21]: Updated October 2026.
+        - img "Portrait of Mark Jenel Cortas" [ref=f6e22]
+      - generic [ref=f6e23]:
+        - generic [ref=f6e24]:
+          - paragraph [ref=f6e25]: Software developer, open to internships.
+          - paragraph [ref=f6e26]: Good software starts with a bad experience. I turn pain points into web and mobile apps that solve them.
+          - generic [ref=f6e27]:
+            - link "View my resume (PDF)" [ref=f6e28] [cursor=pointer]:
+              - /url: assets/resume.pdf
+              - text: View my resume
+              - generic [ref=f6e29]: (PDF)
+            - link "See the work" [ref=f6e30] [cursor=pointer]:
+              - /url: "#work"
+          - paragraph [ref=f6e31]:
+            - text: "Latest: CheatNoNo watched 100+ students across 2 live exams."
+            - link "How it works" [ref=f6e32] [cursor=pointer]:
+              - /url: "#cheatnono"
+        - heading "Mark Jenel Cortas" [level=1] [ref=f6e33]:
+          - generic [ref=f6e34]: Mark Jenel
+          - generic [ref=f6e35]: Cortas
+    - region [ref=f6e36]:
+      - generic [ref=f6e37]:
+        - heading "Bad experiences, fixed." [level=2] [ref=f6e38]
+        - paragraph [ref=f6e39]: Every project here starts with something that went wrong for a real person. Then what I built, what was hard, and what happened.
+      - article [ref=f6e40]:
+        - generic [ref=f6e41]:
+          - heading "Countdown Math Arena" [level=3] [ref=f6e42]
+          - paragraph [ref=f6e43]: A numbers game everyone plays face to face, with no way to challenge a friend online.
+          - generic [ref=f6e44]:
+            - heading "What I built" [level=4] [ref=f6e45]
+            - paragraph [ref=f6e46]: "A real-time multiplayer math duel. Two players get the same six numbers and a three-digit target, race the same timer, and the closest answer wins. Anyone can play: sign in with Google or make an account."
+            - generic [ref=f6e47]:
+              - heading "Try one round" [level=4] [ref=f6e48]
+              - generic [ref=f6e49]:
+                - paragraph [ref=f6e50]:
+                  - generic [ref=f6e51]: Target
+                  - status [ref=f6e52]: "146"
+                - group "Number tiles" [ref=f6e53]:
+                  - button "10" [ref=f6e54] [cursor=pointer]
+                  - button "5" [ref=f6e55] [cursor=pointer]
+                  - button "2" [ref=f6e56] [cursor=pointer]
+                  - button "8" [ref=f6e57] [cursor=pointer]
+                  - button "3" [ref=f6e58] [cursor=pointer]
+                  - button "4" [ref=f6e59] [cursor=pointer]
+                - group "Operators" [ref=f6e60]:
+                  - button "plus" [ref=f6e61] [cursor=pointer]: +
+                  - button "minus" [ref=f6e62] [cursor=pointer]: −
+                  - button "times" [ref=f6e63] [cursor=pointer]: ×
+                  - button "divide" [ref=f6e64] [cursor=pointer]: ÷
+                - list "Your steps" [ref=f6e65]
+                - status [ref=f6e66]: Pick a tile, an operator, then another tile.
+                - generic [ref=f6e67]:
+                  - button "Undo" [ref=f6e68] [cursor=pointer]
+                  - button "Start over" [ref=f6e69] [cursor=pointer]
+                  - button "New puzzle" [ref=f6e70] [cursor=pointer]
+                - paragraph [ref=f6e71]: Combine two tiles at a time with + − × ÷. Subtraction stays positive and division must be exact. The closest tile to the target wins.
+          - generic [ref=f6e72]:
+            - heading "Hardest part" [level=4] [ref=f6e73]
+            - paragraph [ref=f6e74]: I had little experience with TypeScript and had never built anything with WebSockets, so I learned the fundamentals before writing the real-time logic. The sockets sometimes drifted out of sync, so I played both sides of a match myself to test answers at the same time, disconnects and timeouts. I also wrote database functions and locked down the backend so players can’t cheat.
+            - heading "What came out of it" [level=4] [ref=f6e75]
+            - list [ref=f6e76]:
+              - listitem [ref=f6e77]: "A server-authoritative game: match state, round timers and reconnects are decided on a dedicated Node.js and Socket.io server, not by the players’ browsers."
+              - listitem [ref=f6e78]: An answer checker that verifies every expression and rejects invalid or late submissions.
+              - listitem [ref=f6e79]: One atomic, repeat-safe database function saves each match, so rank points, wins and losses never double-count across 100+ matches played by 10+ users.
+          - generic [ref=f6e80]:
+            - heading "Try it" [level=4] [ref=f6e81]
+            - paragraph [ref=f6e82]: Sign in with Google or register. Practice mode needs no opponent.
+            - paragraph [ref=f6e83]: Built with Next.js, TypeScript, Socket.io, Node.js, Supabase, PostgreSQL and Tailwind CSS.
+            - paragraph [ref=f6e84]:
+              - link "Live demo of Countdown Math Arena (opens in a new tab)" [ref=f6e85] [cursor=pointer]:
+                - /url: https://countdowngame-multiplayer.vercel.app/
+                - text: Live demo
+                - generic [ref=f6e86]: of Countdown Math Arena (opens in a new tab)
+              - link "Source code for Countdown Math Arena (opens in a new tab)" [ref=f6e87] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web/countdown-game
+                - text: Source code
+                - generic [ref=f6e88]: for Countdown Math Arena (opens in a new tab)
+        - generic [ref=f6e90]:
+          - 'img "Countdown Math Arena lobby: player profile with rank progress, a challenge link, practice mode, how a round works and recent matches" [ref=f6e91]'
+          - 'img "A live Countdown match: target 146, six number tiles, operators and both players’ ratings, with a 30 second timer" [ref=f6e92]'
+          - img "Countdown sign-in screen with username and password fields and a Continue with Google button" [ref=f6e93]
+      - article [ref=f6e94]:
+        - generic [ref=f6e95]:
+          - heading "CheatNoNo" [level=3] [ref=f6e96]
+          - paragraph [ref=f6e97]: Professors give Google Forms exams and can’t see what students do in their other tabs.
+          - generic [ref=f6e98]:
+            - heading "What I built" [level=4] [ref=f6e99]
+            - paragraph [ref=f6e100]: A Chrome extension for students and a live dashboard for professors. The extension tracks activity during the exam and blocks AI chatbots and messaging sites. The dashboard shows who left the exam, when, and for how long, plus an integrity score for each student. The score is a prompt to review, never a verdict, and monitoring stops when the student submits.
+            - heading "Hardest part" [level=4] [ref=f6e101]
+            - paragraph [ref=f6e102]: "The assignment was vague: detect or block cheating on Google Forms, with no instructions. So the hardest part was deciding what to build. I designed the system flow myself and chose to track and report instead of only blocking, so the professor makes the final call."
+          - generic [ref=f6e103]:
+            - heading "What came out of it" [level=4] [ref=f6e104]
+            - list [ref=f6e105]:
+              - listitem [ref=f6e106]: Watched 100+ students at the same time across 2 live exams and flagged 100+ integrity violations.
+              - listitem [ref=f6e107]: Audit logs are protected with PostgreSQL row-level security and atomic database functions, so a student can’t tamper with their own record from the browser.
+              - listitem [ref=f6e108]: Reconciling Google Forms submissions against live activity takes about 20 seconds per exam, down from 10 minutes.
+            - heading "Try it" [level=4] [ref=f6e109]
+            - paragraph [ref=f6e110]:
+              - text: The demo opens on a teacher sign-in. Create an account, confirm the email, then add a test with a Google Forms link. The student extension loads unpacked in desktop Chrome. I wrote a full setup guide;
+              - link "ask and I’ll send it" [ref=f6e111] [cursor=pointer]:
+                - /url: "#contact"
+              - text: .
+            - paragraph [ref=f6e112]: Built with TypeScript, React, Vite, a Chrome extension (Manifest V3), Supabase, PostgreSQL and Playwright.
+            - paragraph [ref=f6e113]:
+              - link "Live demo of CheatNoNo (opens in a new tab)" [ref=f6e114] [cursor=pointer]:
+                - /url: https://cheatnono.vercel.app/
+                - text: Live demo
+                - generic [ref=f6e115]: of CheatNoNo (opens in a new tab)
+              - link "Source code for CheatNoNo (opens in a new tab)" [ref=f6e116] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web/google-forms-anticheat-system
+                - text: Source code
+                - generic [ref=f6e117]: for CheatNoNo (opens in a new tab)
+        - 'img "CheatNoNo teacher sign-in page: the headline “Fair exams, calmly kept.” beside a Welcome, teacher sign-in form" [ref=f6e120]'
+      - article [ref=f6e121]:
+        - generic [ref=f6e122]:
+          - heading "EconLens" [level=3] [ref=f6e123]
+          - paragraph [ref=f6e124]: Fuel prices climbed and every headline said so, but nobody explained what a 15-peso rise means for an ordinary household.
+          - generic [ref=f6e125]:
+            - heading "What I’m building" [level=4] [ref=f6e126]
+            - paragraph [ref=f6e127]: A mobile app that pulls Philippine economic news and uses AI to explain each story in plain Filipino. Every headline carries an impact level, like Critical or Stabilized, and a short breakdown of how it could hit an average Filipino’s budget.
+          - generic [ref=f6e128]:
+            - heading "Hardest part" [level=4] [ref=f6e129]
+            - paragraph [ref=f6e130]: "Getting the AI to answer consistently was one challenge. Defining “impact on an average Filipino” was the harder one. There is no single average Filipino: a daily commuter, a motorcycle rider and someone who rarely drives all feel a fuel hike differently, so one “you’ll spend ₱500 more” figure can mislead. I had to define those everyday situations and measure impact so it stays realistic from one story to the next."
+          - generic [ref=f6e131]:
+            - heading "Where it stands" [level=4] [ref=f6e132]
+            - paragraph [ref=f6e133]: Still being built, and the project I’m learning the most from. There is no live demo yet; the code is public.
+            - paragraph [ref=f6e134]: Built with Flutter, Dart, Supabase and Python.
+            - paragraph [ref=f6e135]:
+              - link "Source code for EconLens (opens in a new tab)" [ref=f6e136] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web/econlens
+                - text: Source code
+                - generic [ref=f6e137]: for EconLens (opens in a new tab)
+        - generic [ref=f6e139]:
+          - 'img "EconLens home screen: filters for All News, Fuel Prices, Basic Goods and Transport above a list of headlines, each tagged Critical or Stabilized"'
+          - 'img "EconLens article screen in Filipino: what happened, how it affects us, and which areas are affected"'
+          - 'img "EconLens estimated budget impact: about 300 pesos more a month for gasoline, and practical tips"'
+      - generic [ref=f6e140]:
+        - heading "Earlier builds" [level=3] [ref=f6e141]
+        - paragraph [ref=f6e142]: "The projects that taught me the basics: a full-stack app on my own, then a team project I led."
+        - article [ref=f6e143]:
+          - figure [ref=f6e144]:
+            - img "MJCINEMA Now Showing page with movie posters for Soul, Fly Away Home, Time to Hunt and The Tunnel to Summer" [ref=f6e145]
+          - generic [ref=f6e146]:
+            - heading "MJCINEMA" [level=4] [ref=f6e147]
+            - paragraph [ref=f6e148]: Two people can click the same cinema seat at the same moment, and a booking system has to pick one.
+            - paragraph [ref=f6e149]: "A cinema booking system: browse screenings, pick seats, pay from an in-app wallet and cancel for a refund. It was the first full-stack project I built on my own after learning Spring Boot."
+            - list [ref=f6e150]:
+              - listitem [ref=f6e151]: Booking and cancellation run inside transactions that roll back on failure, which prevents double-booking.
+              - listitem [ref=f6e152]: JWT login, BCrypt-hashed passwords and role-based access with Spring Security.
+              - listitem [ref=f6e153]: A layered REST API with DTOs, a query that detects overlapping showtimes and one global error handler.
+            - paragraph [ref=f6e154]:
+              - strong [ref=f6e155]: "Hardest part:"
+              - text: building it from scratch while I was still learning. I debugged with as little AI as possible so I would learn the fundamentals, and I designed how the tables connect on my own.
+            - paragraph [ref=f6e156]:
+              - strong [ref=f6e157]: "Try it:"
+              - text: the demo opens on a login page. Register an account to browse screenings, pick seats and pay with the wallet.
+            - paragraph [ref=f6e158]: Built with Java 17, Spring Boot, JPA and Hibernate, MySQL, Docker, JavaScript, HTML and CSS.
+            - paragraph [ref=f6e159]:
+              - link "Live demo of MJCINEMA (opens in a new tab)" [ref=f6e160] [cursor=pointer]:
+                - /url: https://mjcinemaapp.vercel.app/
+                - text: Live demo
+                - generic [ref=f6e161]: of MJCINEMA (opens in a new tab)
+              - link "Source code for MJCINEMA (opens in a new tab)" [ref=f6e162] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web/MJCinema-Backend
+                - text: Source code
+                - generic [ref=f6e163]: for MJCINEMA (opens in a new tab)
+        - article [ref=f6e164]:
+          - figure [ref=f6e165]:
+            - 'img "Pag-IBIG Housing Loan home page: “Enjoy PAG-IBIG Housing Loan Services anytime!” with Register and Log in buttons and the four loan steps" [ref=f6e166]'
+          - generic [ref=f6e167]:
+            - heading "Pag-IBIG Housing Loan App" [level=4] [ref=f6e168]
+            - paragraph [ref=f6e169]: Applying for a housing loan means forms, supporting documents and in-person steps.
+            - paragraph [ref=f6e170]: A web app where borrowers apply with their collateral and admins approve or reject, with a preview of monthly payments before anyone commits. A school project I led.
+            - list [ref=f6e171]:
+              - listitem [ref=f6e172]: A Spring Boot REST API with 23 endpoints, using DTOs to keep the API’s shape separate from the database entities.
+              - listitem [ref=f6e173]: A 6-entity MySQL schema modeled in Hibernate, including a composite-key entity that links loans to properties.
+              - listitem [ref=f6e174]: The database is hosted on Aiven, so nobody on the team had to change environment variables after pulling from main.
+            - paragraph [ref=f6e175]:
+              - strong [ref=f6e176]: "Hardest part:"
+              - text: most of my classmates were heading into other areas of IT, so I taught the team how to use AI tools well, which folders were safe to edit and how to navigate the database. It pushed me to learn more so I could support them.
+            - paragraph [ref=f6e177]: Built with Java 17, Spring Boot, Spring Security, MySQL, React, TypeScript, Vite, Tailwind CSS and Figma.
+            - paragraph [ref=f6e178]:
+              - link "Source code for Pag-IBIG Housing Loan App (opens in a new tab)" [ref=f6e179] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web/pagibig-housing-loan
+                - text: Source code
+                - generic [ref=f6e180]: for Pag-IBIG Housing Loan App (opens in a new tab)
+    - region [ref=f6e181]:
+      - generic [ref=f6e182]:
+        - heading "About Mark" [level=2] [ref=f6e183]
+        - paragraph [ref=f6e184]: I’m an Information Technology student at the Polytechnic University of the Philippines, and I build applications around problems I’ve actually run into.
+        - paragraph [ref=f6e185]:
+          - text: I’m always curious about how the human mind and the economy work. That curiosity became
+          - mark [ref=f6e186]: EconLens
+          - text: ", an app that explains what a headline costs an ordinary household. It’s the one I’m still building."
+        - paragraph [ref=f6e187]: I believe great software comes from understanding people, so I start every project from the bad experience, not the tech stack.
+        - paragraph [ref=f6e188]: I use AI tools like Claude, ChatGPT and Gemini to move faster. I decide the design and check what they write. On MJCINEMA I deliberately debugged without them to learn the basics.
+        - paragraph [ref=f6e189]: Outside of building, I watch a lot of movies and series.
+        - paragraph [ref=f6e190]:
+          - text: Right now I’m learning Docker, cloud basics and system design.
+          - generic [ref=f6e191]: Updated October 2026.
+        - paragraph [ref=f6e192]:
+          - strong [ref=f6e193]: Mark Jenel Cortas
+          - text: Software developer, looking for an internship
+    - region [ref=f6e194]:
+      - heading "What I used, and where" [level=2] [ref=f6e196]
+      - generic [ref=f6e197]:
+        - heading "Real-time and game logic" [level=3] [ref=f6e198]
+        - generic [ref=f6e199]:
+          - generic [ref=f6e200]:
+            - term [ref=f6e201]: Socket.io and Node.js
+            - definition [ref=f6e202]: Countdown
+            - definition [ref=f6e203]: Match state, round timers and reconnects, decided on the server.
+          - generic [ref=f6e204]:
+            - term [ref=f6e205]: TypeScript
+            - definition [ref=f6e206]: Countdown, CheatNoNo
+            - definition [ref=f6e207]: The answer checker, the extension and the dashboard.
+        - heading "Data and security" [level=3] [ref=f6e208]
+        - generic [ref=f6e209]:
+          - generic [ref=f6e210]:
+            - term [ref=f6e211]: PostgreSQL and Supabase
+            - definition [ref=f6e212]: CheatNoNo, Countdown
+            - definition [ref=f6e213]: Row-level security, atomic functions and repeat-safe match saving.
+          - generic [ref=f6e214]:
+            - term [ref=f6e215]: MySQL on Aiven
+            - definition [ref=f6e216]: Pag-IBIG, MJCINEMA
+            - definition [ref=f6e217]: A 6-entity schema, hosted so the whole team shared one database.
+        - heading "Java backend" [level=3] [ref=f6e218]
+        - generic [ref=f6e219]:
+          - generic [ref=f6e220]:
+            - term [ref=f6e221]: Spring Boot and Spring Security
+            - definition [ref=f6e222]: MJCINEMA, Pag-IBIG
+            - definition [ref=f6e223]: JWT login, role-based access and a 23-endpoint REST API.
+          - generic [ref=f6e224]:
+            - term [ref=f6e225]: JPA and Hibernate
+            - definition [ref=f6e226]: MJCINEMA, Pag-IBIG
+            - definition [ref=f6e227]: Transactions that roll back on failure, and a composite-key entity.
+        - heading "Web and mobile" [level=3] [ref=f6e228]
+        - generic [ref=f6e229]:
+          - generic [ref=f6e230]:
+            - term [ref=f6e231]: React, Vite and Tailwind CSS
+            - definition [ref=f6e232]: CheatNoNo, Pag-IBIG
+            - definition [ref=f6e233]: The dashboards and the loan application.
+          - generic [ref=f6e234]:
+            - term [ref=f6e235]: Next.js
+            - definition [ref=f6e236]: Countdown
+            - definition [ref=f6e237]: The lobby, the match screen and sign-in.
+          - generic [ref=f6e238]:
+            - term [ref=f6e239]: Flutter and Dart
+            - definition [ref=f6e240]: EconLens
+            - definition [ref=f6e241]: The news feed, article breakdown and budget impact screens.
+          - generic [ref=f6e242]:
+            - term [ref=f6e243]: Chrome extension (Manifest V3)
+            - definition [ref=f6e244]: CheatNoNo
+            - definition [ref=f6e245]: Tracks tab and window activity during an exam.
+        - heading "Tooling and AI" [level=3] [ref=f6e246]
+        - generic [ref=f6e247]:
+          - generic [ref=f6e248]:
+            - term [ref=f6e249]: Playwright, Git, GitHub, Postman, Figma
+            - definition [ref=f6e250]: Across projects
+            - definition [ref=f6e251]: Browser tests, version control, API checks and design.
+          - generic [ref=f6e252]:
+            - term [ref=f6e253]: Claude, ChatGPT, Gemini, Antigravity
+            - definition [ref=f6e254]: Across projects
+            - definition [ref=f6e255]: I direct them and check the output. I make the design decisions.
+          - generic [ref=f6e256]:
+            - term [ref=f6e257]: Docker
+            - definition [ref=f6e258]: MJCINEMA, and next
+            - definition [ref=f6e259]: Used once, and what I’m learning properly now.
+    - region [ref=f6e260]:
+      - generic [ref=f6e261]:
+        - heading "Got a problem worth solving? Tell me what’s going wrong." [level=2] [ref=f6e262]:
+          - generic [ref=f6e263]: Got a problem worth solving?
+          - generic [ref=f6e264]: Tell me what’s going wrong.
+        - generic [ref=f6e265]:
+          - generic [ref=f6e266]: What’s going wrong
+          - textbox "What’s going wrong" [ref=f6e267]:
+            - /placeholder: A sentence is enough to start
+          - button "Send this in an email" [ref=f6e268] [cursor=pointer]: →
+        - paragraph [ref=f6e269]: This opens an email with your message ready to send. I usually reply within a day or two, and I’m looking for internships and small freelance builds.
+        - generic [ref=f6e270]:
+          - generic [ref=f6e271]:
+            - term [ref=f6e272]: Email
+            - definition [ref=f6e273]:
+              - link "markjenelcortas29@gmail.com" [ref=f6e274] [cursor=pointer]:
+                - /url: mailto:markjenelcortas29@gmail.com?subject=Let's%20work%20together
+          - generic [ref=f6e275]:
+            - term [ref=f6e276]: LinkedIn
+            - definition [ref=f6e277]:
+              - link "Mark Jenel Cortas (opens in a new tab)" [ref=f6e278] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/mark-jenel-cortas-187792333
+                - text: Mark Jenel Cortas
+                - generic [ref=f6e279]: (opens in a new tab)
+          - generic [ref=f6e280]:
+            - term [ref=f6e281]: GitHub
+            - definition [ref=f6e282]:
+              - link "Jenel-web (opens in a new tab)" [ref=f6e283] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web
+                - text: Jenel-web
+                - generic [ref=f6e284]: (opens in a new tab)
+          - generic [ref=f6e285]:
+            - term [ref=f6e286]: Resume
+            - definition [ref=f6e287]:
+              - link "Download the PDF" [ref=f6e288] [cursor=pointer]:
+                - /url: assets/resume.pdf
+  - contentinfo [ref=f6e289]:
+    - img "A live Countdown Math Arena match between two players" [ref=f6e291]
+    - generic [ref=f6e292]:
+      - link "Mark Jenel Cortas" [ref=f6e293] [cursor=pointer]:
+        - /url: "#home"
+      - navigation "Footer" [ref=f6e294]:
+        - list [ref=f6e295]:
+          - listitem [ref=f6e296]:
+            - link "Work" [ref=f6e297] [cursor=pointer]:
+              - /url: "#work"
+          - listitem [ref=f6e298]:
+            - link "About" [ref=f6e299] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f6e300]:
+            - link "Tools" [ref=f6e301] [cursor=pointer]:
+              - /url: "#uses"
+          - listitem [ref=f6e302]:
+            - link "Contact" [ref=f6e303] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f6e304]:
+            - link "Resume" [ref=f6e305] [cursor=pointer]:
+              - /url: assets/resume.pdf
+      - generic [ref=f6e306]:
+        - paragraph [ref=f6e307]:
+          - link "markjenelcortas29@gmail.com" [ref=f6e308] [cursor=pointer]:
+            - /url: mailto:markjenelcortas29@gmail.com
+          - text: Replies within a day or two.
+        - paragraph [ref=f6e309]:
+          - link "GitHub (opens in a new tab)" [ref=f6e310] [cursor=pointer]:
+            - /url: https://github.com/Jenel-web
+            - text: GitHub
+            - generic [ref=f6e311]: (opens in a new tab)
+          - link "LinkedIn (opens in a new tab)" [ref=f6e312] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/mark-jenel-cortas-187792333
+            - text: LinkedIn
+            - generic [ref=f6e313]: (opens in a new tab)
+      - paragraph [ref=f6e314]: © 2026 Mark Jenel Cortas. IT student, Polytechnic University of the Philippines.
