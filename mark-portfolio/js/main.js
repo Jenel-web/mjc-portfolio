@@ -75,3 +75,42 @@ story.addEventListener('close', () => {
   document.body.classList.remove('story-open');
   if (lastCard) lastCard.focus();
 });
+
+
+/* ---------- Work With Me pop-up ---------- */
+const reach = document.getElementById('reach');
+let reachTrigger = null;
+document.querySelectorAll('[data-contact-open]').forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();                       // without scripts the link still opens an email
+    reachTrigger = el;
+    reach.showModal();
+    document.body.classList.add('reach-open');
+  });
+});
+reach.querySelector('.reach-close').addEventListener('click', () => reach.close());
+reach.addEventListener('click', (e) => { if (e.target === reach) reach.close(); });   // click outside the box
+reach.addEventListener('close', () => {
+  document.body.classList.remove('reach-open');
+  if (reachTrigger) reachTrigger.focus();
+});
+
+const copyBtn = reach.querySelector('.reach-copy');
+const copyLabel = reach.querySelector('.reach-copy-label');
+const reachStatus = reach.querySelector('.reach-status');
+let copyTimer;
+copyBtn.addEventListener('click', async () => {
+  const email = copyBtn.dataset.email;
+  let ok = false;
+  try { await navigator.clipboard.writeText(email); ok = true; }
+  catch {
+    const range = document.createRange();    // older browsers: select the address so it can be copied by hand
+    range.selectNodeContents(document.getElementById('reach-address'));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    try { ok = document.execCommand('copy'); } catch { ok = false; }
+  }
+  clearTimeout(copyTimer);
+  copyLabel.textContent = ok ? 'Copied' : 'Press and hold the address to copy';
+  reachStatus.textContent = ok ? 'Email address copied.' : '';
+  copyTimer = setTimeout(() => { copyLabel.textContent = 'Copy email address'; reachStatus.textContent = ''; }, 2500);
+});

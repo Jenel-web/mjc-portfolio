@@ -1,0 +1,239 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Mark Jenel Cortas, home" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - text: mjc
+        - generic [ref=e6]: _
+      - button "Open menu" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - region [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]: Open to internships
+          - paragraph [ref=e17]: AI Native Software Developer
+          - heading "Mark Jenel Cortas" [level=1] [ref=e18]:
+            - generic [ref=e19]: Mark Jenel
+            - generic [ref=e20]: Cortas
+          - paragraph [ref=e21]: Good software starts with a bad experience. I turn pain points into web and mobile apps that solve them.
+          - generic [ref=e22]:
+            - link "View My Resume (PDF)" [ref=e23] [cursor=pointer]:
+              - /url: assets/resume.pdf
+              - text: View My Resume
+              - generic [ref=e28]: (PDF)
+            - link "Work With Me" [ref=e29] [cursor=pointer]:
+              - /url: mailto:markjenelcortas29@gmail.com?subject=Let's%20work%20together
+          - list "Social links" [ref=e33]:
+            - listitem [ref=e34]:
+              - link "GitHub (opens in a new tab)" [ref=e35] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web
+            - listitem [ref=e39]:
+              - link "LinkedIn (opens in a new tab)" [ref=e40] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/mark-jenel-cortas-187792333
+            - listitem [ref=e44]:
+              - link "Email markjenelcortas29@gmail.com" [ref=e45] [cursor=pointer]:
+                - /url: mailto:markjenelcortas29@gmail.com
+        - figure [ref=e50]:
+          - img "Portrait of Mark Jenel Cortas" [ref=e51]
+    - region [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - heading "About me" [level=2] [ref=e56]
+          - paragraph [ref=e57]: I’m Mark Jenel Cortas, an Information Technology student at the Polytechnic University of the Philippines. I build applications around problems I care about and turn them into solutions people can actually use.
+          - paragraph [ref=e58]: Outside of building, I enjoy watching movies and series, and I’m always curious about how the human mind and the economy work. I believe that great software comes from understanding people.
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - term [ref=e61]: school
+              - definition [ref=e62]: Polytechnic University of the Philippines
+            - generic [ref=e63]:
+              - term [ref=e64]: focus
+              - definition [ref=e65]: Fullstack web and mobile apps
+            - generic [ref=e66]:
+              - term [ref=e67]: currently learning
+              - definition [ref=e68]:
+                - list "Currently learning" [ref=e69]:
+                  - listitem [ref=e70]: Cloud Basics
+                  - listitem [ref=e71]: Docker
+                  - listitem [ref=e72]: System design
+        - figure [ref=e73]:
+          - img "Mark Jenel Cortas at his desk" [ref=e74]
+    - region [ref=e75]:
+      - generic [ref=e77]:
+        - heading "Selected projects" [level=2] [ref=e78]
+        - paragraph [ref=e79]: Five things I built. Open one to read the problem, the solution and the hardest part.
+      - list "Projects" [ref=e81]:
+        - listitem [ref=e82]:
+          - article [ref=e83]:
+            - 'button "Countdown Math Arena home screen: the headline “Hit the Target. Beat the Clock. Outsmart Your Rival.” with Find a Match and Practice Board buttons Countdown Math Arena A real-time multiplayer math duel where two players race to hit a three-digit target using six numbers. Built with Next.js React TypeScript Express Docker Supabase Socket.io Tailwind Read the case study" [ref=e84] [cursor=pointer]':
+              - 'img "Countdown Math Arena home screen: the headline “Hit the Target. Beat the Clock. Outsmart Your Rival.” with Find a Match and Practice Board buttons" [ref=e91]'
+              - generic [ref=e92]:
+                - generic [ref=e93]: Countdown Math Arena
+                - generic [ref=e94]: A real-time multiplayer math duel where two players race to hit a three-digit target using six numbers.
+                - generic [ref=e95]:
+                  - generic [ref=e96]: Built with
+                  - generic [ref=e97]: Next.js
+                  - generic [ref=e98]: React
+                  - generic [ref=e99]: TypeScript
+                  - generic [ref=e100]: Express
+                  - generic [ref=e101]: Docker
+                  - generic [ref=e102]: Supabase
+                  - generic [ref=e103]: Socket.io
+                  - generic [ref=e104]: Tailwind
+                - generic [ref=e105]: Read the case study
+        - listitem [ref=e108]:
+          - article [ref=e109]:
+            - generic: Ongoing
+            - 'button "EconLens opening screen: the name EconLens PH with the line Alamin ang epekto ng balita sa iyong buhay on a blue background EconLens A mobile app that turns economic news into plain-language explanations of how it affects an average Filipino’s daily life. Built with Flutter Dart Supabase Python Read the case study" [ref=e110] [cursor=pointer]':
+              - 'img "EconLens opening screen: the name EconLens PH with the line Alamin ang epekto ng balita sa iyong buhay on a blue background" [ref=e117]'
+              - generic [ref=e118]:
+                - generic [ref=e119]: EconLens
+                - generic [ref=e120]: A mobile app that turns economic news into plain-language explanations of how it affects an average Filipino’s daily life.
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Built with
+                  - generic [ref=e123]: Flutter
+                  - generic [ref=e124]: Dart
+                  - generic [ref=e125]: Supabase
+                  - generic [ref=e126]: Python
+                - generic [ref=e127]: Read the case study
+        - listitem [ref=e130]:
+          - article [ref=e131]:
+            - 'button "Pag-IBIG Housing Loan home page: “Enjoy PAG-IBIG Housing Loan Services anytime!” with Register and Log in buttons and the four loan steps Pag-IBIG Housing Loan App A web app that digitalizes housing loan applications and previews monthly payments, built as a school project that I led. Built with Figma React TypeScript Spring Boot Aiven MySQL Read the case study" [ref=e132] [cursor=pointer]':
+              - 'img "Pag-IBIG Housing Loan home page: “Enjoy PAG-IBIG Housing Loan Services anytime!” with Register and Log in buttons and the four loan steps" [ref=e139]'
+              - generic [ref=e140]:
+                - generic [ref=e141]: Pag-IBIG Housing Loan App
+                - generic [ref=e142]: A web app that digitalizes housing loan applications and previews monthly payments, built as a school project that I led.
+                - generic [ref=e143]:
+                  - generic [ref=e144]: Built with
+                  - generic [ref=e145]: Figma
+                  - generic [ref=e146]: React
+                  - generic [ref=e147]: TypeScript
+                  - generic [ref=e148]: Spring Boot
+                  - generic [ref=e149]: Aiven
+                  - generic [ref=e150]: MySQL
+                - generic [ref=e151]: Read the case study
+        - listitem [ref=e154]:
+          - article [ref=e155]:
+            - 'button "CheatNoNo teacher sign-in page: the headline “Fair exams, calmly kept.” beside a Welcome, teacher sign-in form CheatNoNo A Chrome extension and admin dashboard that helps professors see suspicious activity during Google Forms exams, without accusing students. Built with Chrome Extension (Manifest V3) HTML CSS JavaScript Supabase Read the case study" [ref=e156] [cursor=pointer]':
+              - 'img "CheatNoNo teacher sign-in page: the headline “Fair exams, calmly kept.” beside a Welcome, teacher sign-in form" [ref=e163]'
+              - generic [ref=e164]:
+                - generic [ref=e165]: CheatNoNo
+                - generic [ref=e166]: A Chrome extension and admin dashboard that helps professors see suspicious activity during Google Forms exams, without accusing students.
+                - generic [ref=e167]:
+                  - generic [ref=e168]: Built with
+                  - generic [ref=e169]: Chrome Extension (Manifest V3)
+                  - generic [ref=e170]: HTML
+                  - generic [ref=e171]: CSS
+                  - generic [ref=e172]: JavaScript
+                  - generic [ref=e173]: Supabase
+                - generic [ref=e174]: Read the case study
+        - listitem [ref=e177]:
+          - article [ref=e178]:
+            - button "MJCINEMA Now Showing page with movie posters for Soul, Fly Away Home, Time to Hunt and The Tunnel to Summer MJCINEMA A full-stack cinema ticket booking system, and the first full-stack project I built on my own after learning Spring Boot. Built with HTML CSS JavaScript Spring Boot MySQL Read the case study" [ref=e179] [cursor=pointer]:
+              - img "MJCINEMA Now Showing page with movie posters for Soul, Fly Away Home, Time to Hunt and The Tunnel to Summer" [ref=e186]
+              - generic [ref=e187]:
+                - generic [ref=e188]: MJCINEMA
+                - generic [ref=e189]: A full-stack cinema ticket booking system, and the first full-stack project I built on my own after learning Spring Boot.
+                - generic [ref=e190]:
+                  - generic [ref=e191]: Built with
+                  - generic [ref=e192]: HTML
+                  - generic [ref=e193]: CSS
+                  - generic [ref=e194]: JavaScript
+                  - generic [ref=e195]: Spring Boot
+                  - generic [ref=e196]: MySQL
+                - generic [ref=e197]: Read the case study
+    - region [ref=e200]:
+      - generic [ref=e201]:
+        - generic [ref=e202]:
+          - heading "Skills and tools" [level=2] [ref=e203]
+          - paragraph [ref=e204]: What I reach for.
+        - list [ref=e205]:
+          - listitem [ref=e206]:
+            - heading "Languages" [level=3] [ref=e207]
+            - list "Languages" [ref=e209]:
+              - listitem [ref=e210]: TypeScript
+              - listitem [ref=e212]: JavaScript
+              - listitem [ref=e214]: Java
+              - listitem [ref=e216]: Dart
+              - listitem [ref=e218]: Python
+              - listitem [ref=e220]: HTML
+              - listitem [ref=e222]: CSS
+          - listitem [ref=e224]:
+            - heading "Frontend" [level=3] [ref=e225]
+            - list "Frontend" [ref=e227]:
+              - listitem [ref=e228]: React
+              - listitem [ref=e230]: Next.js
+              - listitem [ref=e232]: Tailwind CSS
+          - listitem [ref=e234]:
+            - heading "Backend" [level=3] [ref=e235]
+            - list "Backend" [ref=e237]:
+              - listitem [ref=e238]: Spring Boot
+              - listitem [ref=e240]: Express
+              - listitem [ref=e242]: Socket.io
+          - listitem [ref=e244]:
+            - heading "Database and cloud" [level=3] [ref=e245]
+            - list "Database and cloud" [ref=e247]:
+              - listitem [ref=e248]: Supabase
+              - listitem [ref=e250]: MySQL
+              - listitem [ref=e252]: Aiven
+              - listitem [ref=e254]: Docker
+          - listitem [ref=e256]:
+            - heading "Mobile and Platforms" [level=3] [ref=e257]
+            - list "Mobile and Platforms" [ref=e259]:
+              - listitem [ref=e260]: Flutter
+              - listitem [ref=e262]: Chrome Extensions (Manifest V3)
+          - listitem [ref=e264]:
+            - heading "AI tools" [level=3] [ref=e265]
+            - list "AI tools" [ref=e267]:
+              - listitem [ref=e268]: Claude
+              - listitem [ref=e270]: ChatGPT
+              - listitem [ref=e272]: Gemini
+              - listitem [ref=e274]: Antigravity
+          - listitem [ref=e276]:
+            - heading "Tools and testing" [level=3] [ref=e277]
+            - list "Tools and testing" [ref=e279]:
+              - listitem [ref=e280]: Git
+              - listitem [ref=e282]: GitHub
+              - listitem [ref=e284]: Postman
+              - listitem [ref=e286]: Figma
+              - listitem [ref=e288]: Vite
+              - listitem [ref=e290]: Vitest
+    - region [ref=e292]:
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - heading "Have a project in mind? Let’s work together" [level=2] [ref=e296]
+          - paragraph [ref=e297]: I’m looking for internships and small freelance builds. Tell me what you’re making and I’ll get back to you.
+          - link "markjenelcortas29@gmail.com" [ref=e298] [cursor=pointer]:
+            - /url: mailto:markjenelcortas29@gmail.com?subject=Let's%20work%20together
+          - paragraph [ref=e299]: I usually reply within a day or two.
+        - link "Work With Me" [ref=e301] [cursor=pointer]:
+          - /url: mailto:markjenelcortas29@gmail.com?subject=Let's%20work%20together
+  - contentinfo [ref=e305]:
+    - generic [ref=e306]:
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - link "mjc _" [ref=e309] [cursor=pointer]:
+            - /url: "#home"
+            - text: mjc
+            - generic [ref=e310]: _
+          - paragraph [ref=e311]: Mark Jenel Cortas, fullstack developer studying at the Polytechnic University of the Philippines.
+        - generic [ref=e312]:
+          - heading "Get in touch" [level=2] [ref=e313]
+          - link "markjenelcortas29@gmail.com" [ref=e314] [cursor=pointer]:
+            - /url: mailto:markjenelcortas29@gmail.com
+          - list "Social links" [ref=e315]:
+            - listitem [ref=e316]:
+              - link "GitHub (opens in a new tab)" [ref=e317] [cursor=pointer]:
+                - /url: https://github.com/Jenel-web
+            - listitem [ref=e321]:
+              - link "LinkedIn (opens in a new tab)" [ref=e322] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/mark-jenel-cortas-187792333
+            - listitem [ref=e326]:
+              - link "Email markjenelcortas29@gmail.com" [ref=e327] [cursor=pointer]:
+                - /url: mailto:markjenelcortas29@gmail.com
+      - generic [ref=e332]:
+        - paragraph [ref=e333]: © 2026 Mark Jenel Cortas. Building with purpose.
+        - paragraph [ref=e334]:
+          - link "Back to top" [ref=e335] [cursor=pointer]:
+            - /url: "#home"
