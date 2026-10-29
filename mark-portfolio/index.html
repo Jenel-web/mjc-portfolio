@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Mark Jenel Cortas, Fullstack Developer</title>
+    <title>Mark Jenel Cortas, Software Developer</title>
     <meta
       name="description"
-      content="Portfolio of Mark Jenel Cortas, a fullstack developer studying at the Polytechnic University of the Philippines."
+      content="Mark Jenel Cortas, a software developer and IT student at the Polytechnic University of the Philippines, open to internships. Apps built from real pain points, with results."
     />
     <meta name="theme-color" content="#0b1220" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
@@ -75,6 +75,9 @@
             <p class="hero-intro">
               Good software starts with a bad experience. I turn pain points
               into web and mobile apps that solve them.
+            </p>
+            <p class="banner-reply">
+              Latest: CheatNoNo watched 100+ students across 2 live exams.
             </p>
             <div class="btn-group">
               <!-- EDIT: put your resume in the assets folder as resume.pdf -->
@@ -199,9 +202,18 @@
               can actually use.
             </p>
             <p>
-              Outside of building, I enjoy watching movies and series, and I’m
-              always curious about how the human mind and the economy work. I
-              believe that great software comes from understanding people.
+              I’m always curious about how the human mind and the economy work.
+              That curiosity became EconLens, an app that explains what a
+              headline means for an ordinary household, and it’s the project
+              I’m still building. I believe that great software comes from
+              understanding people.
+            </p>
+            <p>
+              I use AI tools like Claude, ChatGPT and Gemini to move faster, but
+              I make the design decisions and check what they write. On
+              MJCINEMA I deliberately debugged with as little AI as possible, so
+              I would learn the basics. Outside of building, I enjoy watching
+              movies and series.
             </p>
             <dl class="facts">
               <div class="fact">
@@ -213,7 +225,7 @@
                 <dd>Fullstack web and mobile apps</dd>
               </div>
               <div class="fact">
-                <dt>currently learning</dt>
+                <dt>learning now (Oct 2026)</dt>
                 <!-- EDIT: what you're learning now -->
                 <dd>
                   <ul class="tag-list" aria-label="Currently learning">
@@ -292,17 +304,17 @@
                       ><span class="monitor-bar" aria-hidden="true"
                         ><i></i><i></i><i></i></span
                       ><img
-                        width="994"
-                        height="566"
+                        width="1176"
+                        height="585"
                         class="shot-dark"
-                        src="images/shots/countdown.png"
-                        alt="Countdown Math Arena home screen: the headline “Hit the Target. Beat the Clock. Outsmart Your Rival.” with Find a Match and Practice Board buttons" /></span
+                        src="images/shots/countdown-match.png"
+                        alt="A live Countdown Math Arena match: target 146, six number tiles, operators and both players’ ratings" /></span
                   ></span>
                   <span class="card-body">
                     <span class="card-title">Countdown Math Arena</span>
                     <span class="card-desc"
-                      >A real-time multiplayer math duel where two players race
-                      to hit a three-digit target using six numbers.</span
+                      >A numbers game people only play face to face. I built a
+                      way to challenge a friend online, in real time.</span
                     >
                     <span class="card-stack"
                       ><span class="sr-only">Built with </span
@@ -313,6 +325,8 @@
                       ><span class="pill">Docker</span
                       ><span class="pill">Supabase</span
                       ><span class="pill">Socket.io</span
+                      ><span class="pill">Node.js</span
+                      ><span class="pill">PostgreSQL</span
                       ><span class="pill">Tailwind</span></span
                     >
                     <span class="card-more"
@@ -344,7 +358,17 @@
                     ><span class="pill">Docker</span
                     ><span class="pill">Supabase</span
                     ><span class="pill">Socket.io</span
+                    ><span class="pill">Node.js</span
+                    ><span class="pill">PostgreSQL</span
                     ><span class="pill">Tailwind</span>
+                  </p>
+                  <p class="story-summary">
+                    Result: the server decides every match, and results save
+                    exactly once across 100+ matches played by 10+ users.
+                  </p>
+                  <p class="story-text">
+                    Try it: sign in with Google or register. Practice mode needs
+                    no opponent.
                   </p>
                   <div class="btn-group story-actions">
                     <a
@@ -407,9 +431,12 @@
                         I built Countdown Math Arena so two players can play the
                         game online in real time. Both players get the same
                         numbers and target, the timer runs in sync, and the
-                        round ends with a fair result for both sides. It is
-                        playable by anyone, players can sign up using their
-                        google account or by making one in the site.
+                        round ends with a fair result for both sides. Match
+                        state, round timers and reconnects run on a dedicated
+                        Node.js and Socket.io server, and an answer checker
+                        rejects invalid or late submissions. It is playable by
+                        anyone: players can sign up with their Google account
+                        or create one on the site.
                       </p>
                     </section>
                     <section class="story-part">
@@ -422,10 +449,10 @@
                         cases myself by playing both sides of a two-player
                         match, checking what happens when players answer at the
                         same time, disconnect or run out of time. On the
-                        technical side, there were times that the sockets don't
-                        sync so I had to pay more attention on that, also I made
-                        some RPCs and secure the backend to ensure that no
-                        players can cheat.
+                        technical side, the sockets sometimes drifted out of sync,
+                        so I had to watch that closely. I also wrote database
+                        functions (RPCs) and secured the backend so that no
+                        player can cheat.
                       </p>
                     </section>
                   </div>
@@ -449,17 +476,17 @@
                       ><span class="monitor-bar" aria-hidden="true"
                         ><i></i><i></i><i></i></span
                       ><img
-                        src="images/shots/econlens.png"
-                        alt="EconLens opening screen: the name EconLens PH with the line Alamin ang epekto ng balita sa iyong buhay on a blue background"
-                        width="1366"
-                        height="639" /></span
+                        src="images/shots/econlens-home.png"
+                        alt="EconLens home screen: filters for All News, Fuel Prices, Basic Goods and Transport above headlines tagged Critical or Stabilized"
+                        width="1031"
+                        height="610"
+                        style="object-position: center top" /></span
                   ></span>
                   <span class="card-body">
                     <span class="card-title">EconLens</span>
                     <span class="card-desc"
-                      >A mobile app that turns economic news into plain-language
-                      explanations of how it affects an average Filipino’s daily
-                      life.</span
+                      >Headlines say fuel went up, not what it means for your
+                      budget. EconLens explains it in plain Filipino.</span
                     >
                     <span class="card-stack"
                       ><span class="sr-only">Built with </span
@@ -497,6 +524,10 @@
                     ><span class="pill">Python</span>
                   </p>
                   <p class="story-status">Status: Ongoing</p>
+                  <p class="story-text">
+                    Where it stands: still being built, with no live demo yet.
+                    The code is public.
+                  </p>
                   <div class="btn-group story-actions">
                     <a
                       class="btn btn-primary"
@@ -534,10 +565,11 @@
                       <p class="story-text">
                         EconLens pulls economic news relevant to the Philippines
                         through a news API and uses AI to explain each story in
-                        everyday terms. Every headline comes with an impact
-                        level, such as “high impact,” and a short breakdown of
-                        how it could affect an average Filipino, for example how
-                        much more they might spend on gasoline or rice.
+                        plain Filipino. Every headline comes with an impact
+                        level, such as Critical or Stabilized, and a short
+                        breakdown of how it could affect an average Filipino,
+                        for example how much more they might spend on gasoline
+                        each month.
                       </p>
                     </section>
                     <section class="story-part">
@@ -581,9 +613,8 @@
                   <span class="card-body">
                     <span class="card-title">Pag-IBIG Housing Loan App</span>
                     <span class="card-desc"
-                      >A web app that digitalizes housing loan applications and
-                      previews monthly payments, built as a school project that
-                      I led.</span
+                      >Housing loan applications mean forms and in-person
+                      steps. My team and I built the whole process online.</span
                     >
                     <span class="card-stack"
                       ><span class="sr-only">Built with </span
@@ -592,7 +623,11 @@
                       ><span class="pill">TypeScript</span
                       ><span class="pill">Spring Boot</span
                       ><span class="pill">Aiven</span
-                      ><span class="pill">MySQL</span></span
+                      ><span class="pill">MySQL</span
+                      ><span class="pill">Java 17</span
+                      ><span class="pill">Spring Security</span
+                      ><span class="pill">Vite</span
+                      ><span class="pill">Tailwind</span></span
                     >
                     <span class="card-more"
                       >Read the case study<svg
@@ -622,7 +657,18 @@
                     ><span class="pill">TypeScript</span
                     ><span class="pill">Spring Boot</span
                     ><span class="pill">Aiven</span
-                    ><span class="pill">MySQL</span>
+                    ><span class="pill">MySQL</span
+                    ><span class="pill">Java 17</span
+                    ><span class="pill">Spring Security</span
+                    ><span class="pill">Vite</span
+                    ><span class="pill">Tailwind</span>
+                  </p>
+                  <p class="story-summary">
+                    Result: a 23-endpoint Spring Boot API and a 6-entity
+                    database, built by a team I led.
+                  </p>
+                  <p class="story-text">
+                    Where it stands: there is no live demo. The code is public.
                   </p>
                   <div class="btn-group story-actions">
                     <a
@@ -658,9 +704,13 @@
                     <section class="story-part">
                       <h4 class="story-label">Solution</h4>
                       <p class="story-text">
-                        We built a web app that lets an applicant fill out the
-                        loan application, submit it and preview the monthly
-                        amortization. I led a team of classmates and handled the
+                        We built a web app where borrowers apply with their
+                        collateral, preview the monthly amortization and submit,
+                        and admins approve or reject the application. The API
+                        has 23 endpoints and uses DTOs to keep its shape
+                        separate from the database; the 6-entity MySQL schema
+                        includes a composite-key entity that links loans to
+                        properties. I led a team of classmates and handled the
                         technical direction.
                       </p>
                     </section>
@@ -705,17 +755,19 @@
                   <span class="card-body">
                     <span class="card-title">CheatNoNo</span>
                     <span class="card-desc"
-                      >A Chrome extension and admin dashboard that helps
-                      professors see suspicious activity during Google Forms
-                      exams, without accusing students.</span
+                      >Professors can’t see what students do in other tabs
+                      during a Google Forms exam. CheatNoNo shows them, without
+                      accusing anyone.</span
                     >
                     <span class="card-stack"
                       ><span class="sr-only">Built with </span
+                      ><span class="pill">TypeScript</span
+                      ><span class="pill">React</span
+                      ><span class="pill">Vite</span
                       ><span class="pill">Chrome Extension (Manifest V3)</span
-                      ><span class="pill">HTML</span
-                      ><span class="pill">CSS</span
-                      ><span class="pill">JavaScript</span
-                      ><span class="pill">Supabase</span></span
+                      ><span class="pill">Supabase</span
+                      ><span class="pill">PostgreSQL</span
+                      ><span class="pill">Playwright</span></span
                     >
                     <span class="card-more"
                       >Read the case study<svg
@@ -740,10 +792,24 @@
                   </p>
                   <p class="story-stack">
                     <span class="sr-only">Built with </span
+                    ><span class="pill">TypeScript</span
+                    ><span class="pill">React</span
+                    ><span class="pill">Vite</span
                     ><span class="pill">Chrome Extension (Manifest V3)</span
-                    ><span class="pill">HTML</span><span class="pill">CSS</span
-                    ><span class="pill">JavaScript</span
-                    ><span class="pill">Supabase</span>
+                    ><span class="pill">Supabase</span
+                    ><span class="pill">PostgreSQL</span
+                    ><span class="pill">Playwright</span>
+                  </p>
+                  <p class="story-summary">
+                    Result: watched 100+ students at once across 2 live exams,
+                    flagged 100+ integrity violations, and cut review from 10
+                    minutes to 20 seconds per exam.
+                  </p>
+                  <p class="story-text">
+                    Try it: anyone can create a teacher account on the
+                    dashboard, confirm the email, then add a test with a Google
+                    Forms link. Students use the extension in desktop Chrome. I
+                    wrote a setup guide, so ask me and I’ll send it.
                   </p>
                   <div class="btn-group story-actions">
                     <a
@@ -812,7 +878,11 @@
                         to show activity that could affect integrity, not to
                         accuse anyone of cheating, so the professor makes the
                         final call. It only monitors student activity until they
-                        submit the exam to protect their privacy.
+                        submit the exam to protect their privacy. Violation logs
+                        are protected with PostgreSQL row-level security and
+                        atomic database functions, so a student can’t tamper
+                        with their own record, and a CSV check compares Google
+                        Forms submissions against the live activity.
                       </p>
                     </section>
                     <section class="story-part">
@@ -857,17 +927,18 @@
                   <span class="card-body">
                     <span class="card-title">MJCINEMA</span>
                     <span class="card-desc"
-                      >A full-stack cinema ticket booking system, and the first
-                      full-stack project I built on my own after learning Spring
-                      Boot.</span
+                      >Two people can click the same cinema seat at the same
+                      moment. This booking system lets only one get it.</span
                     >
                     <span class="card-stack"
                       ><span class="sr-only">Built with </span
-                      ><span class="pill">HTML</span
-                      ><span class="pill">CSS</span
-                      ><span class="pill">JavaScript</span
+                      ><span class="pill">Java 17</span
                       ><span class="pill">Spring Boot</span
-                      ><span class="pill">MySQL</span></span
+                      ><span class="pill">JWT</span
+                      ><span class="pill">JPA</span
+                      ><span class="pill">MySQL</span
+                      ><span class="pill">Docker</span
+                      ><span class="pill">JavaScript</span></span
                     >
                     <span class="card-more"
                       >Read the case study<svg
@@ -892,10 +963,21 @@
                   </p>
                   <p class="story-stack">
                     <span class="sr-only">Built with </span
-                    ><span class="pill">HTML</span><span class="pill">CSS</span
-                    ><span class="pill">JavaScript</span
+                    ><span class="pill">Java 17</span
                     ><span class="pill">Spring Boot</span
-                    ><span class="pill">MySQL</span>
+                    ><span class="pill">JWT</span
+                    ><span class="pill">JPA</span
+                    ><span class="pill">MySQL</span
+                    ><span class="pill">Docker</span
+                    ><span class="pill">JavaScript</span>
+                  </p>
+                  <p class="story-summary">
+                    Result: booking and cancellation roll back on failure, so
+                    two people can never end up with the same seat.
+                  </p>
+                  <p class="story-text">
+                    Try it: the demo opens on a login page. Register an account
+                    to browse screenings, pick seats and pay with the wallet.
                   </p>
                   <div class="btn-group story-actions">
                     <a
@@ -954,13 +1036,16 @@
                     <section class="story-part">
                       <h4 class="story-label">What I built</h4>
                       <p class="story-text">
-                        A web app where users can book cinema tickets. It
-                        handles the rules a real booking system needs: how many
-                        users can book a screening, preventing two people from
-                        booking the same seat at the same time, and how
-                        showtimes are scheduled. I built both the interface and
-                        the Spring Boot backend, with a MySQL database behind
-                        it.
+                        A web app where users browse screenings, pick seats, pay
+                        from an in-app wallet and cancel for a refund. It
+                        handles the rules a real booking system needs:
+                        preventing two people from booking the same seat at the
+                        same time, and detecting overlapping showtimes. Login
+                        uses JWT with hashed passwords and role-based access
+                        through Spring Security, and the REST API is layered
+                        with DTOs and one global error handler. I built both the
+                        interface and the Spring Boot backend, with a MySQL
+                        database behind it.
                       </p>
                     </section>
                     <section class="story-part">
@@ -1306,7 +1391,8 @@
               </h2>
               <p>
                 I’m looking for internships and small freelance builds. Tell me
-                what you’re making and I’ll get back to you.
+                what’s going wrong in what you’re making, one sentence is enough,
+                and I’ll get back to you.
               </p>
               <a
                 class="banner-email"
@@ -1348,8 +1434,8 @@
           <div class="footer-brand">
             <a class="nav-logo" href="#home">mjc<span>_</span></a>
             <p>
-              Mark Jenel Cortas, fullstack developer studying at the Polytechnic
-              University of the Philippines.
+              Mark Jenel Cortas, software developer studying at the Polytechnic
+              University of the Philippines. Open to internships.
             </p>
           </div>
           <div class="footer-col">
@@ -1419,8 +1505,8 @@
         </div>
         <div class="footer-bottom">
           <p>
-            © <span data-year>2026</span> Mark Jenel Cortas. Building with
-            purpose.
+            © <span data-year>2026</span> Mark Jenel Cortas. IT student at PUP,
+            open to internships.
           </p>
           <p>
             <a class="footer-email" style="margin: 0" href="#home"
