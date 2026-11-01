@@ -600,6 +600,19 @@ body.story-open { overflow: hidden; }
   .story-body > .story-parts { grid-column: 1 / -1; }
 }
 
+.story-compare { display: grid; gap: var(--space-md); width: 100%; padding-top: var(--space-xl); border-top: 1px solid var(--border); }
+.story-compare .story-text { max-width: 70ch; }
+.compare-row { display: grid; gap: var(--space-md); }
+.compare-row figure { margin: 0; display: grid; gap: var(--space-sm); align-content: start; }
+.compare-row img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-md); }
+.compare-row figcaption { font-size: 14px; color: var(--text-muted); }
+@media (min-width: 760px) {
+  .compare-row { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .story-body > .story-compare { grid-column: 1 / -1; }
+}
+
 .card-stack { margin-top: 6px; }
 
 /* a real screenshot with its own dark background: show all of it, no cropping */

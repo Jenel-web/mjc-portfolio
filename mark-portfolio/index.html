@@ -633,14 +633,14 @@
                       ><span class="monitor-bar" aria-hidden="true"
                         ><i></i><i></i><i></i></span
                       ><img
-                        src="images/mjcinema.jpg"
-                        alt="MJCINEMA Now Showing page with movie posters for Soul, Fly Away Home, Time to Hunt and The Tunnel to Summer"
-                        width="1344"
-                        height="562"
+                        src="images/mjcinema-v2-hero.png"
+                        alt="MJCINEMA redesigned home page: featured film We Made a Beautiful Bouquet with Book seats and View details buttons"
+                        width="924"
+                        height="617"
                         style="
                           object-fit: contain;
                           object-position: center;
-                          background: #001f3e;
+                          background: #0a0a0c;
                         " /></span
                   ></span>
                   <span class="card-body">
@@ -678,7 +678,8 @@
                   <p class="story-summary">
                     A full-stack cinema ticket booking system, and the first
                     full-stack project I built on my own after learning Spring
-                    Boot.
+                    Boot. I later redesigned the whole interface and kept the
+                    same backend, so both versions are live.
                   </p>
                   <p class="story-stack">
                     <span class="sr-only">Built with </span
@@ -701,7 +702,7 @@
                   <div class="btn-group story-actions">
                     <a
                       class="btn btn-primary"
-                      href="https://mjcinemaapp.vercel.app/"
+                      href="https://mj-cinema-frontend.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg
@@ -779,6 +780,88 @@
                       </p>
                     </section>
                   </div>
+                  <section class="story-compare">
+                    <h4 class="story-label">The redesign: same backend, new interface</h4>
+                    <p class="story-text">
+                      The first interface was a practice project from when I was
+                      still learning, and it showed. Later I rebuilt the
+                      frontend with AI coding agents, using reference designs to
+                      direct them. The Spring Boot API did not change, so the
+                      old and new versions run on the same backend and share the
+                      same data. Unlike v1, where I avoided AI so I would learn,
+                      v2 was about making it something an average person would
+                      want to use.
+                    </p>
+                    <div class="compare-row">
+                      <figure>
+                        <img
+                          src="images/mjcinema-v1-now-showing.png"
+                          alt="v1 Now Showing page: movie posters on a navy background"
+                          width="1341"
+                          height="634"
+                          loading="lazy"
+                        />
+                        <figcaption>v1: Now Showing</figcaption>
+                      </figure>
+                      <figure>
+                        <img
+                          src="images/mjcinema-v2-now-showing.png"
+                          alt="v2 Now Showing page: a poster grid on a dark red and black theme"
+                          width="879"
+                          height="354"
+                          loading="lazy"
+                        />
+                        <figcaption>v2: Now Showing</figcaption>
+                      </figure>
+                    </div>
+                    <div class="compare-row">
+                      <figure>
+                        <img
+                          src="images/mjcinema-v1-seats.png"
+                          alt="v1 seat picker: a grid of grey seats with a Confirm Booking button"
+                          width="1336"
+                          height="620"
+                          loading="lazy"
+                        />
+                        <figcaption>v1: picking seats</figcaption>
+                      </figure>
+                      <figure>
+                        <img
+                          src="images/mjcinema-v2-seats.png"
+                          alt="v2 seat picker: lettered rows, a curved screen, cinema and showtime details, and a running total"
+                          width="1234"
+                          height="636"
+                          loading="lazy"
+                        />
+                        <figcaption>
+                          v2: picking seats, now with row letters, showtime and a
+                          running total
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="compare-row">
+                      <figure>
+                        <img
+                          src="images/mjcinema-v1-admin.png"
+                          alt="v1 admin dashboard: total sales, bookings, users and a weekly sales line chart"
+                          width="1363"
+                          height="634"
+                          loading="lazy"
+                        />
+                        <figcaption>v1: admin dashboard</figcaption>
+                      </figure>
+                      <figure>
+                        <img
+                          src="images/mjcinema-v2-admin.png"
+                          alt="v2 admin dashboard: the same figures in a cleaner layout with a weekly sales bar chart"
+                          width="1349"
+                          height="636"
+                          loading="lazy"
+                        />
+                        <figcaption>v2: admin dashboard</figcaption>
+                      </figure>
+                    </div>
+                  </section>
                 </template>
               </article>
             </li>
